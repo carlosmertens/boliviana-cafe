@@ -93,7 +93,7 @@ export function SelectMenu({
             <ListboxOption
               key={option.id}
               value={option}
-              className="group text-boliviana-navy data-focus:bg-boliviana-pink/10 data-selected:bg-boliviana-pink/10 data-selected:border-boliviana-pink relative cursor-default border-l-4 border-transparent py-2 pr-9 pl-3 select-none data-focus:outline-hidden"
+              className="group text-boliviana-navy data-focus:bg-boliviana-pink/10 data-selected:bg-boliviana-pink/10 data-selected:border-boliviana-pink rounded-control relative cursor-default border-l-4 border-transparent py-2 pr-9 pl-3 select-none data-focus:outline-hidden"
             >
               <div className="flex items-center gap-2">
                 {option.avatar && (
