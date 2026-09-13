@@ -5,7 +5,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { ChevronUpDownIcon } from "@heroicons/react/16/solid";
 import { useFormatter, useTranslations } from "next-intl";
 import { groupedHours, isOpenNow } from "@/lib/hours";
 
@@ -44,15 +44,15 @@ export function OpeningHoursAccordion() {
 
   return (
     <Disclosure as="div">
-      <DisclosureButton className="group rounded-control focus-visible:outline-boliviana-pink flex items-center gap-2 outline-offset-2 focus-visible:outline-2">
+      <DisclosureButton className="group rounded-control flex items-center gap-2 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white">
         <span
           aria-hidden="true"
           className={`size-2 rounded-full ${open ? "bg-boliviana-yellow" : "bg-boliviana-cream/30"}`}
         />
         <span>{open ? t("openNow") : t("closedNow")}</span>
-        <ChevronDownIcon
+        <ChevronUpDownIcon
           aria-hidden="true"
-          className="text-boliviana-cream/60 size-4 transition-transform group-data-open:rotate-180"
+          className="text-boliviana-cream/60 size-4"
         />
       </DisclosureButton>
 
