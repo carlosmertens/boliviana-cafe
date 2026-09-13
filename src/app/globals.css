@@ -29,14 +29,14 @@ body {
 
 /*
  * Evokes the café's actual neon storefront sign (white tube lettering with
- * a soft purple/pink glow bloom) as a subtle accent on the wordmark.
+ * a soft purple glow bloom) as a subtle accent on the wordmark.
  */
 .neon-wordmark {
   text-shadow:
-    0 0 2px rgba(226, 28, 118, 0.7),
-    0 0 8px rgba(226, 28, 118, 0.6),
-    0 0 16px rgba(107, 34, 168, 0.8),
-    0 0 30px rgba(107, 34, 168, 0.65),
-    0 0 50px rgba(107, 34, 168, 0.5),
-    0 0 76px rgba(107, 34, 168, 0.3);
+    0 0 2px rgba(28, 21, 82, 0.6),
+    0 0 8px rgba(107, 34, 168, 0.75),
+    0 0 18px rgba(107, 34, 168, 0.65),
+    0 0 32px rgba(107, 34, 168, 0.5),
+    0 0 54px rgba(107, 34, 168, 0.35),
+    0 0 80px rgba(107, 34, 168, 0.2);
 }
