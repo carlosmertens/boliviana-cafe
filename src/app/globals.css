@@ -12,6 +12,16 @@
   --radius-control: 0.75rem;
 }
 
+/*
+ * Project rule: every interactive element's keyboard-focus ring uses
+ * boliviana-pink (`focus-visible:outline-boliviana-pink`), regardless of
+ * that element's own color, so focus is a single consistent signal
+ * across the site. This is separate from internal component states like
+ * a dropdown's hovered/active option highlight, which can use another
+ * brand color (e.g. purple) when needed for contrast against the page
+ * background (see SelectMenu's option highlight).
+ */
+
 body {
   background: var(--color-boliviana-cream);
   color: var(--color-boliviana-navy);

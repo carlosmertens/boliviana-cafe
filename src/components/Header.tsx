@@ -83,8 +83,8 @@ export function Header() {
                 href={href}
                 className={
                   isActive
-                    ? "bg-boliviana-pink/10 border-boliviana-pink text-boliviana-navy focus-visible:outline-boliviana-pink block border-l-4 py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
-                    : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus-visible:outline-boliviana-pink block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
+                    ? "bg-boliviana-pink/10 border-boliviana-pink text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control block border-l-4 py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
+                    : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
                 }
               >
                 {t(item)}
