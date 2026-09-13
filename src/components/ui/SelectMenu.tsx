@@ -93,7 +93,7 @@ export function SelectMenu({
             <ListboxOption
               key={option.id}
               value={option}
-              className="group text-boliviana-navy data-focus:bg-boliviana-purple relative cursor-default py-2 pr-9 pl-3 select-none data-focus:text-white data-focus:outline-hidden"
+              className="group text-boliviana-navy data-focus:bg-boliviana-pink/10 data-selected:bg-boliviana-pink/10 data-selected:border-boliviana-pink relative cursor-default border-l-4 border-transparent py-2 pr-9 pl-3 select-none data-focus:outline-hidden"
             >
               <div className="flex items-center gap-2">
                 {option.avatar && (
@@ -109,7 +109,7 @@ export function SelectMenu({
                 </span>
               </div>
 
-              <span className="text-boliviana-purple absolute inset-y-0 right-0 flex items-center pr-4 group-not-data-selected:hidden group-data-focus:text-white">
+              <span className="text-boliviana-pink absolute inset-y-0 right-0 flex items-center pr-4 group-not-data-selected:hidden">
                 <CheckIcon aria-hidden="true" className="size-5" />
               </span>
             </ListboxOption>
