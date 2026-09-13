@@ -14,5 +14,25 @@
   "hero": {
     "tagline": "Ein Geschmack von Bolivien",
     "subtitle": "Ein Bissen. Ein Schluck. Eine Geschichte."
+  },
+  "about": {
+    "title": "Über Boliviana",
+    "intro": "Die Seele Boliviens, Caraya Coffee und Miskisimi – drei bolivianische Marken, ein Café im Herzen von Berlin. Die ganze Geschichte folgt in Kürze."
+  },
+  "menu": {
+    "title": "Speisekarte",
+    "intro": "Salteñas, Cuñapés, Spezialitätenkaffee und bolivianischer Wein – unsere vollständige Speisekarte folgt in Kürze."
+  },
+  "gallery": {
+    "title": "Galerie",
+    "intro": "Ein Einblick in Boliviana – Fotos folgen in Kürze."
+  },
+  "events": {
+    "title": "Veranstaltungen",
+    "intro": "Coffee Cuppings, Barista-Kurse und kulturelle Feste – bleibt gespannt."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Winsstraße 17, 10405 Berlin – Kontaktdaten folgen in Kürze."
   }
 }

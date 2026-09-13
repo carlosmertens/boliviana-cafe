@@ -14,5 +14,25 @@
   "hero": {
     "tagline": "Un Sabor de Bolivia",
     "subtitle": "Un bocado. Un sorbo. Una historia."
+  },
+  "about": {
+    "title": "Sobre Boliviana",
+    "intro": "Die Seele Boliviens, Caraya Coffee y Miskisimi — tres marcas bolivianas, un café en el corazón de Berlín. La historia completa llegará pronto."
+  },
+  "menu": {
+    "title": "Menú",
+    "intro": "Salteñas, cuñapés, café de especialidad y vino boliviano — el menú completo llegará pronto."
+  },
+  "gallery": {
+    "title": "Galería",
+    "intro": "Un vistazo a lo que pasa en Boliviana — fotos próximamente."
+  },
+  "events": {
+    "title": "Próximos Eventos",
+    "intro": "Catas de café, cursos de barista y celebraciones culturales — mantente atento."
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Winsstraße 17, 10405 Berlín — datos de contacto próximamente."
   }
 }
