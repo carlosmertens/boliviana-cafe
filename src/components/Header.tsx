@@ -29,7 +29,7 @@ export function Header() {
                 BOLIVIANA
               </Link>
             </div>
-            <div className="hidden sm:ml-8 sm:flex sm:space-x-6">
+            <div className="hidden sm:ml-8 sm:flex sm:items-center sm:space-x-6">
               {navItems.map((item) => {
                 const href = `/${item}`;
                 const isActive = pathname === href;
