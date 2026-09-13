@@ -26,3 +26,16 @@ body {
   background: var(--color-boliviana-cream);
   color: var(--color-boliviana-navy);
 }
+
+/*
+ * Evokes the café's actual neon storefront sign (white tube lettering with
+ * a soft purple/pink glow bloom) as a subtle accent on the wordmark.
+ */
+.neon-wordmark {
+  text-shadow:
+    0 0 2px rgba(226, 28, 118, 0.7),
+    0 0 8px rgba(226, 28, 118, 0.55),
+    0 0 18px rgba(91, 42, 134, 0.55),
+    0 0 34px rgba(91, 42, 134, 0.4),
+    0 0 54px rgba(91, 42, 134, 0.25);
+}
