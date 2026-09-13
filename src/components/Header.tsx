@@ -29,9 +29,10 @@ export function Header() {
             <div className="flex shrink-0 items-center">
               <Link
                 href="/"
-                className="text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink text-lg font-bold tracking-[0.2em] outline-offset-4 focus-visible:outline-2"
+                className="text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink text-xl font-semibold tracking-[0.3em] outline-offset-4 focus-visible:outline-2"
               >
-                BOLIVIANA
+                BOLIVIAN
+                <span className="text-boliviana-pink">A</span>
               </Link>
             </div>
             <div className="hidden sm:ml-8 sm:flex sm:items-center sm:space-x-6">
