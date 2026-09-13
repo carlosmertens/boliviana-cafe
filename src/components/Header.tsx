@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 
-const navItems = ["about", "menu", "gallery", "events", "contact"] as const;
+const navItems = ["about", "menu", "events", "gallery", "contact"] as const;
 
 export function Header() {
   const t = useTranslations("nav");
