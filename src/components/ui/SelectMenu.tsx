@@ -87,7 +87,7 @@ export function SelectMenu({
 
         <ListboxOptions
           transition
-          className="rounded-control absolute z-10 mt-1 max-h-56 w-full overflow-auto bg-white text-base shadow-lg outline-1 outline-black/5 data-leave:transition data-leave:duration-100 data-leave:ease-in data-closed:data-leave:opacity-0 sm:text-sm"
+          className="rounded-control absolute z-10 mt-1 max-h-56 w-full origin-top overflow-auto bg-white text-base shadow-lg outline-1 outline-black/5 transition data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in sm:text-sm"
         >
           {options.map((option) => (
             <ListboxOption

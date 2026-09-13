@@ -56,7 +56,10 @@ export function OpeningHoursAccordion() {
         />
       </DisclosureButton>
 
-      <DisclosurePanel className="text-boliviana-cream/70 mt-2 space-y-1">
+      <DisclosurePanel
+        transition
+        className="text-boliviana-cream/70 mt-2 origin-top space-y-1 transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
+      >
         {groupedHours().map((group) => {
           const first = weekdayName(format, group.days[0], "short");
           const last = weekdayName(
