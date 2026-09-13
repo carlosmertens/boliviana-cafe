@@ -55,7 +55,7 @@ export function SelectMenu({
         {label}
       </Label>
       <div className={`relative ${hideLabel ? "" : "mt-2"} ${className ?? ""}`}>
-        <ListboxButton className="text-boliviana-navy outline-boliviana-navy/20 focus-visible:outline-boliviana-pink grid w-full cursor-default grid-cols-1 rounded-full bg-white py-1.5 pr-2 pl-3 text-left outline-1 -outline-offset-1 focus-visible:outline-2 focus-visible:-outline-offset-2 sm:text-sm/6">
+        <ListboxButton className="text-boliviana-navy outline-boliviana-navy/20 focus-visible:outline-boliviana-purple grid w-full cursor-default grid-cols-1 rounded-full bg-white py-1.5 pr-2 pl-3 text-left outline-1 -outline-offset-1 focus-visible:outline-2 focus-visible:-outline-offset-2 sm:text-sm/6">
           <span className="col-start-1 row-start-1 flex items-center gap-2 pr-6">
             {selected.avatar && (
               // eslint-disable-next-line @next/next/no-img-element
