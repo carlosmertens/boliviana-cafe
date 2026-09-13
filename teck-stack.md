@@ -95,6 +95,12 @@ Note: this Next.js version (16) deprecated `middleware.js` in favor of `proxy.js
 
 **Still to do:** `alt` text policy once real photos exist for menu/gallery; re-run a contrast check if the color palette changes; Lighthouse/axe pass once there's more real content to test against.
 
+## Node.js version
+
+**Decision:** Pinned to `24.x` via `engines.node` in `package.json` (matches `@types/node`).
+
+**Reasoning:** Confirmed directly against Vercel's docs — **24.x is Vercel's current default** for new projects (22.x and 20.x also available; 20.x is being deprecated 2026-10-01). Without an `engines` field Vercel would already use 24.x by default, but pinning it explicitly keeps deployments reproducible if Vercel's default ever changes, and matches the local dev machine's Node version.
+
 ## To Be Decided
 
 - CMS or content-management approach for menu items, events, and daily availability updates
