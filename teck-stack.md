@@ -46,9 +46,29 @@ Scaffolded with `create-next-app` (latest): TypeScript, Tailwind CSS, ESLint, Ap
 
 Config: `.prettierrc.json`, `.prettierignore`. Scripts: `pnpm format` (write), `pnpm format:check` (CI-style check).
 
+## i18n: next-intl
+
+**Decision:** [`next-intl`](https://next-intl.dev), with locale-prefixed routing (`/de`, `/en`, `/es`) and one JSON message file per locale.
+
+**Reasoning:**
+
+- Translations render server-side (SSR/static) — no flash of untranslated content, good for SEO on a local-search-dependent café site.
+- Type-safe translation keys, official Next.js App Router support, actively maintained.
+- Editing text just means editing a JSON file per language (`messages/de.json`, `messages/en.json`, `messages/es.json`) — no touching component code for copy changes. Fine to keep this git-based for now; can swap the message source for a CMS later (e.g. Sanity) without changing the routing/rendering setup.
+
+**How it's wired:**
+
+- `src/i18n/routing.ts` — defines locales (`de`, `en`, `es`) and default locale (`de`).
+- `src/i18n/navigation.ts` — locale-aware `Link`/`useRouter`/`usePathname`.
+- `src/i18n/request.ts` — resolves messages per request; registered in `next.config.ts` via `createNextIntlPlugin`.
+- `src/proxy.ts` — locale detection/redirect (Next.js 16 renamed `middleware.ts` → `proxy.ts`; functionally the same).
+- All routes live under `src/app/[locale]/`.
+- `messages/{de,en,es}.json` — the actual text content, organized by page/section namespace.
+
+Note: this Next.js version (16) deprecated `middleware.js` in favor of `proxy.js` — same behavior, new file name/export. Worth remembering since most i18n tutorials online still reference the old convention.
+
 ## To Be Decided
 
-- i18n library/approach for German, Spanish, English
 - CMS or content-management approach for menu items, events, and daily availability updates
 - Hosting/domain setup details
 - Image/gallery handling (static assets vs. CMS vs. Instagram embed)
