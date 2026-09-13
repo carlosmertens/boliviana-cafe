@@ -40,47 +40,60 @@ function weekdayName(
 export function OpeningHoursAccordion() {
   const t = useTranslations("hours");
   const format = useFormatter();
-  const open = isOpenNow();
+  const isOpen = isOpenNow();
 
   return (
     <Disclosure as="div">
-      <DisclosureButton className="group rounded-control flex items-center gap-2 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white">
-        <span
-          aria-hidden="true"
-          className={`size-2 rounded-full ${open ? "bg-boliviana-yellow" : "bg-boliviana-cream/30"}`}
-        />
-        <span>{open ? t("openNow") : t("closedNow")}</span>
-        <ChevronUpDownIcon
-          aria-hidden="true"
-          className="text-boliviana-cream/60 size-4"
-        />
-      </DisclosureButton>
+      {({ open: isExpanded }) => (
+        <>
+          <DisclosureButton className="group rounded-control flex items-center gap-2 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white">
+            <span
+              aria-hidden="true"
+              className={`size-2 rounded-full ${isOpen ? "bg-boliviana-yellow" : "bg-boliviana-cream/30"}`}
+            />
+            <span>{isOpen ? t("openNow") : t("closedNow")}</span>
+            <ChevronUpDownIcon
+              aria-hidden="true"
+              className="text-boliviana-cream/60 size-4"
+            />
+          </DisclosureButton>
 
-      <DisclosurePanel
-        transition
-        className="text-boliviana-cream/70 mt-2 origin-top space-y-1 transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
-      >
-        {groupedHours().map((group) => {
-          const first = weekdayName(format, group.days[0], "short");
-          const last = weekdayName(
-            format,
-            group.days[group.days.length - 1],
-            "short",
-          );
-          const label = group.days.length > 1 ? `${first}–${last}` : first;
+          {/* Animating grid-template-rows (rather than height) lets this
+              expand/collapse smoothly without knowing the content's height
+              up front — plain height transitions can't animate to "auto". */}
+          <div
+            className={`grid transition-[grid-template-rows] duration-200 ease-out ${isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+          >
+            <DisclosurePanel
+              static
+              aria-hidden={!isExpanded}
+              className={`text-boliviana-cream/70 mt-2 min-h-0 space-y-1 overflow-hidden transition-opacity duration-150 ${isExpanded ? "opacity-100" : "opacity-0"}`}
+            >
+              {groupedHours().map((group) => {
+                const first = weekdayName(format, group.days[0], "short");
+                const last = weekdayName(
+                  format,
+                  group.days[group.days.length - 1],
+                  "short",
+                );
+                const label =
+                  group.days.length > 1 ? `${first}–${last}` : first;
 
-          return (
-            <div key={group.days.join(",")} className="flex gap-4">
-              <span className="w-16 shrink-0">{label}</span>
-              <span>
-                {group.open && group.close
-                  ? `${group.open}–${group.close}`
-                  : t("closed")}
-              </span>
-            </div>
-          );
-        })}
-      </DisclosurePanel>
+                return (
+                  <div key={group.days.join(",")} className="flex gap-4">
+                    <span className="w-16 shrink-0">{label}</span>
+                    <span>
+                      {group.open && group.close
+                        ? `${group.open}–${group.close}`
+                        : t("closed")}
+                    </span>
+                  </div>
+                );
+              })}
+            </DisclosurePanel>
+          </div>
+        </>
+      )}
     </Disclosure>
   );
 }
