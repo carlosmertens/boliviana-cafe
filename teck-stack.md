@@ -67,6 +67,27 @@ Config: `.prettierrc.json`, `.prettierignore`. Scripts: `pnpm format` (write), `
 
 Note: this Next.js version (16) deprecated `middleware.js` in favor of `proxy.js` — same behavior, new file name/export. Worth remembering since most i18n tutorials online still reference the old convention.
 
+## Accessibility & SEO
+
+**Decision:** Treat these as first-class requirements, not an afterthought — baked into shared components/layout rather than bolted on per-page.
+
+**What's in place:**
+
+- **Skip-to-content link** — visually hidden, appears on first `Tab` press, jumps keyboard users past the nav to `<main id="main-content">`.
+- **`aria-current="page"`** on the active nav link (desktop and mobile), so screen readers get the "current page" signal, not just a visual underline.
+- **One consistent focus ring color** (pink) across every interactive element — see the rule documented in `globals.css`.
+- **Contrast-checked palette usage**: text on top of a brand color is picked to clear WCAG AA (4.5:1 for normal text, 3:1 for large text/non-text UI) — e.g. muted nav-link text uses `navy/70` not `navy/60` (4.36:1, a hair under AA), hero body text is full-opacity white on pink (4.51:1) rather than a translucent cream. Re-check contrast whenever a new color/opacity combo is introduced, don't assume a brand color "just works" as text.
+- **Per-page metadata** (`src/lib/seo.ts` → `buildMetadata`): every route sets its own `<title>`/description instead of inheriting one generic layout title — duplicate titles across pages hurts SEO.
+- **`hreflang` alternates + canonical URL** on every page, for all 3 locales — without this Google can treat `/de`, `/en`, `/es` as duplicate content instead of translations of each other.
+- **OpenGraph + Twitter card metadata** per page (for link previews when shared).
+- **`sitemap.xml` / `robots.txt`** (`src/app/sitemap.ts`, `src/app/robots.ts`) — auto-generated from the same locale/route list.
+- **JSON-LD structured data** (`CafeOrCoffeeShop`, `src/components/CafeJsonLd.tsx`) — only real facts (name, address); never invent phone numbers/hours we don't have yet.
+- **`NEXT_PUBLIC_SITE_URL`** env var (`src/lib/site.ts`) drives metadataBase/canonical/sitemap URLs — set this in Vercel once there's a real domain, defaults to `http://localhost:3000` for local dev.
+
+**Deliberately NOT done:** making static text (headings, paragraphs) keyboard-focusable — only interactive elements (links, buttons, form controls) should ever receive focus; adding `tabindex` to plain text is an anti-pattern that makes keyboard navigation worse, not more accessible.
+
+**Still to do:** `alt` text policy once real photos exist for menu/gallery; re-run a contrast check if the color palette changes; Lighthouse/axe pass once there's more real content to test against.
+
 ## To Be Decided
 
 - CMS or content-management approach for menu items, events, and daily availability updates

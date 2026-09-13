@@ -10,7 +10,10 @@ export function PlaceholderMain({ namespace }: PlaceholderMainProps) {
   const t = useTranslations(namespace);
 
   return (
-    <main className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-20 text-center">
+    <main
+      id="main-content"
+      className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-20 text-center"
+    >
       <h1 className="text-boliviana-navy text-4xl font-semibold sm:text-5xl">
         {t("title")}
       </h1>

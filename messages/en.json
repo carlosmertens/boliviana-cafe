@@ -1,4 +1,9 @@
 {
+  "common": {
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "openMenu": "Open main menu"
+  },
   "metadata": {
     "title": "Boliviana | A Taste of Bolivia",
     "description": "Boliviana brings together Bolivian pastries, specialty coffee, and wine in the heart of Berlin."
@@ -12,6 +17,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "location": "Berlin",
     "tagline": "A Taste of Bolivia",
     "subtitle": "One bite. One sip. One story."
   },

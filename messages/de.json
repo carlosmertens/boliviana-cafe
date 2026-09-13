@@ -1,4 +1,9 @@
 {
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "mainNavigation": "Hauptnavigation",
+    "openMenu": "Hauptmenü öffnen"
+  },
   "metadata": {
     "title": "Boliviana | Ein Geschmack von Bolivien",
     "description": "Boliviana vereint bolivianisches Gebäck, Spezialitätenkaffee und Wein im Herzen von Berlin."
@@ -12,6 +17,7 @@
     "contact": "Kontakt"
   },
   "hero": {
+    "location": "Berlin",
     "tagline": "Ein Geschmack von Bolivien",
     "subtitle": "Ein Bissen. Ein Schluck. Eine Geschichte."
   },

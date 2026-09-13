@@ -14,10 +14,15 @@ const navItems = ["about", "menu", "gallery", "events", "contact"] as const;
 
 export function Header() {
   const t = useTranslations("nav");
+  const tCommon = useTranslations("common");
   const pathname = usePathname();
 
   return (
-    <Disclosure as="nav" className="bg-boliviana-cream relative">
+    <Disclosure
+      as="nav"
+      aria-label={tCommon("mainNavigation")}
+      className="bg-boliviana-cream relative"
+    >
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <div className="flex h-16 justify-between">
           <div className="flex">
@@ -37,10 +42,11 @@ export function Header() {
                   <Link
                     key={item}
                     href={href}
+                    aria-current={isActive ? "page" : undefined}
                     className={
                       isActive
                         ? "border-boliviana-pink text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium outline-offset-4 focus-visible:outline-2"
-                        : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium outline-offset-4 focus-visible:outline-2"
+                        : "text-boliviana-navy/70 hover:border-boliviana-navy/20 hover:text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium outline-offset-4 focus-visible:outline-2"
                     }
                   >
                     {t(item)}
@@ -55,9 +61,9 @@ export function Header() {
           </div>
 
           <div className="-mr-2 flex items-center sm:hidden">
-            <DisclosureButton className="group text-boliviana-navy/60 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-pink rounded-control relative inline-flex items-center justify-center p-2 focus:outline-2 focus:-outline-offset-1">
+            <DisclosureButton className="group text-boliviana-navy/70 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-pink rounded-control relative inline-flex items-center justify-center p-2 focus:outline-2 focus:-outline-offset-1">
               <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{tCommon("openMenu")}</span>
               <Bars3Icon
                 aria-hidden="true"
                 className="block size-6 group-data-open:hidden"
@@ -81,10 +87,11 @@ export function Header() {
                 key={item}
                 as={Link}
                 href={href}
+                aria-current={isActive ? "page" : undefined}
                 className={
                   isActive
                     ? "bg-boliviana-pink/10 border-boliviana-pink text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control block border-l-4 py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
-                    : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
+                    : "text-boliviana-navy/70 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
                 }
               >
                 {t(item)}
