@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Jost, Caveat } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const jost = Jost({
+  variable: "--font-jost",
   weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -46,7 +52,10 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${jost.variable} ${caveat.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
