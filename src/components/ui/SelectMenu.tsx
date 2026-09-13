@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import {
   Label,
   Listbox,
@@ -27,6 +28,8 @@ interface SelectMenuProps {
   /** Applied to the button/options wrapper — use to set a min-width so longer
    * option labels don't get clipped (the options panel matches the button's width). */
   className?: string;
+  /** Generic leading icon shown before the selected label (e.g. a language glyph). */
+  icon?: ReactNode;
 }
 
 /**
@@ -40,6 +43,7 @@ export function SelectMenu({
   onChange,
   hideLabel = false,
   className,
+  icon,
 }: SelectMenuProps) {
   const selected = options.find((option) => option.id === value) ?? options[0];
 
@@ -57,6 +61,14 @@ export function SelectMenu({
       <div className={`relative ${hideLabel ? "" : "mt-2"} ${className ?? ""}`}>
         <ListboxButton className="text-boliviana-navy outline-boliviana-navy/20 focus-visible:outline-boliviana-purple grid w-full cursor-default grid-cols-1 rounded-full bg-white py-1.5 pr-2 pl-3 text-left outline-1 -outline-offset-1 focus-visible:outline-2 focus-visible:-outline-offset-2 sm:text-sm/6">
           <span className="col-start-1 row-start-1 flex items-center gap-2 pr-6">
+            {icon && (
+              <span
+                aria-hidden="true"
+                className="text-boliviana-navy/60 flex shrink-0"
+              >
+                {icon}
+              </span>
+            )}
             {selected.avatar && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
