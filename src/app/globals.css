@@ -9,6 +9,7 @@
   --color-boliviana-yellow: #f6de4b;
   --font-sans: var(--font-jost);
   --font-script: var(--font-caveat);
+  --radius-control: 0.75rem;
 }
 
 body {

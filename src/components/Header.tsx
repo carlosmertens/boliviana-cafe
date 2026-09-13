@@ -24,7 +24,7 @@ export function Header() {
             <div className="flex shrink-0 items-center">
               <Link
                 href="/"
-                className="text-boliviana-navy text-lg font-bold tracking-[0.2em]"
+                className="text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink text-lg font-bold tracking-[0.2em] outline-offset-4 focus-visible:outline-2"
               >
                 BOLIVIANA
               </Link>
@@ -39,8 +39,8 @@ export function Header() {
                     href={href}
                     className={
                       isActive
-                        ? "border-boliviana-pink text-boliviana-navy inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
-                        : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:text-boliviana-navy inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium"
+                        ? "border-boliviana-pink text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium outline-offset-4 focus-visible:outline-2"
+                        : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:text-boliviana-navy rounded-control focus-visible:outline-boliviana-pink inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium outline-offset-4 focus-visible:outline-2"
                     }
                   >
                     {t(item)}
@@ -55,7 +55,7 @@ export function Header() {
           </div>
 
           <div className="-mr-2 flex items-center sm:hidden">
-            <DisclosureButton className="group text-boliviana-navy/60 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-purple relative inline-flex items-center justify-center rounded-md p-2 focus:outline-2 focus:-outline-offset-1">
+            <DisclosureButton className="group text-boliviana-navy/60 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-pink rounded-control relative inline-flex items-center justify-center p-2 focus:outline-2 focus:-outline-offset-1">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -83,8 +83,8 @@ export function Header() {
                 href={href}
                 className={
                   isActive
-                    ? "bg-boliviana-pink/10 border-boliviana-pink text-boliviana-navy block border-l-4 py-2 pr-4 pl-3 text-base font-medium"
-                    : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium"
+                    ? "bg-boliviana-pink/10 border-boliviana-pink text-boliviana-navy focus-visible:outline-boliviana-pink block border-l-4 py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
+                    : "text-boliviana-navy/60 hover:border-boliviana-navy/20 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus-visible:outline-boliviana-pink block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium outline-offset-[-2px] focus-visible:outline-2"
                 }
               >
                 {t(item)}

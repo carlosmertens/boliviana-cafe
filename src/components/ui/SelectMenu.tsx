@@ -59,7 +59,7 @@ export function SelectMenu({
         {label}
       </Label>
       <div className={`relative ${hideLabel ? "" : "mt-2"} ${className ?? ""}`}>
-        <ListboxButton className="text-boliviana-navy outline-boliviana-navy/20 focus-visible:outline-boliviana-purple grid w-full cursor-default grid-cols-1 rounded-full bg-white py-1.5 pr-2 pl-3 text-left outline-1 -outline-offset-1 focus-visible:outline-2 focus-visible:-outline-offset-2 sm:text-sm/6">
+        <ListboxButton className="text-boliviana-navy outline-boliviana-navy/20 focus-visible:outline-boliviana-purple rounded-control grid w-full cursor-default grid-cols-1 bg-white py-1.5 pr-2 pl-3 text-left outline-1 -outline-offset-1 focus-visible:outline-2 focus-visible:-outline-offset-2 sm:text-sm/6">
           <span className="col-start-1 row-start-1 flex items-center gap-2 pr-6">
             {icon && (
               <span
@@ -87,7 +87,7 @@ export function SelectMenu({
 
         <ListboxOptions
           transition
-          className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg outline-1 outline-black/5 data-leave:transition data-leave:duration-100 data-leave:ease-in data-closed:data-leave:opacity-0 sm:text-sm"
+          className="rounded-control absolute z-10 mt-1 max-h-56 w-full overflow-auto bg-white py-1 text-base shadow-lg outline-1 outline-black/5 data-leave:transition data-leave:duration-100 data-leave:ease-in data-closed:data-leave:opacity-0 sm:text-sm"
         >
           {options.map((option) => (
             <ListboxOption
