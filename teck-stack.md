@@ -67,6 +67,13 @@ Config: `.prettierrc.json`, `.prettierignore`. Scripts: `pnpm format` (write), `
 
 Note: this Next.js version (16) deprecated `middleware.js` in favor of `proxy.js` — same behavior, new file name/export. Worth remembering since most i18n tutorials online still reference the old convention.
 
+**Remembering a visitor's language choice:**
+
+- First-time visitors (no cookie yet) always get German — we deliberately ignore the browser's `Accept-Language` header rather than guess, since this is a specific Berlin café, not a general audience site. Set via `localeDetection: false` in `routing.ts`.
+- Once a visitor picks a language via the switcher, next-intl automatically writes a `NEXT_LOCALE` cookie (no custom code needed for this part — it's built in and independent of the `localeDetection` flag). `src/proxy.ts` reads that cookie on later unprefixed visits (e.g. `/`) and redirects there instead of to the default locale.
+- Chose a cookie over `localStorage` for two reasons: (1) cookies are readable during server-side routing, before any page renders, so the right language shows immediately with no flash — `localStorage` can only be read after client JS runs, causing a visible flicker to the wrong language first; (2) GDPR — a language-preference cookie holding no personal data, used only to serve the site in the visitor's own chosen language, falls under the "strictly necessary" exemption in ePrivacy Directive Art. 5(3), so it doesn't need a consent banner (unlike analytics/ad cookies, which would if added later).
+- Verified via `curl` with different `Accept-Language`/`Cookie` headers: fresh visitor → always `/de`; visitor with `NEXT_LOCALE=en` → redirected to `/en` (path preserved, e.g. `/en/about`); visiting `/en` directly sets the cookie via `Set-Cookie`.
+
 ## Accessibility & SEO
 
 **Decision:** Treat these as first-class requirements, not an afterthought — baked into shared components/layout rather than bolted on per-page.
