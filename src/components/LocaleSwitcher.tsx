@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { SelectMenu } from "@/components/ui/SelectMenu";
 
 const localeLabels: Record<string, string> = {
   de: "Deutsch",
@@ -10,25 +11,25 @@ const localeLabels: Record<string, string> = {
   es: "Español",
 };
 
+// Flag icons will be added to each option's `avatar` field later.
+const localeOptions = routing.locales.map((code) => ({
+  id: code,
+  label: localeLabels[code],
+}));
+
 export function LocaleSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
 
   return (
-    <select
-      aria-label="Language"
+    <SelectMenu
+      label="Language"
+      hideLabel
+      className="min-w-32"
+      options={localeOptions}
       value={locale}
-      onChange={(event) =>
-        router.replace(pathname, { locale: event.target.value })
-      }
-      className="border-boliviana-navy/20 text-boliviana-navy rounded-full border bg-transparent px-3 py-1.5 text-sm font-medium"
-    >
-      {routing.locales.map((code) => (
-        <option key={code} value={code}>
-          {localeLabels[code]}
-        </option>
-      ))}
-    </select>
+      onChange={(newLocale) => router.replace(pathname, { locale: newLocale })}
+    />
   );
 }
