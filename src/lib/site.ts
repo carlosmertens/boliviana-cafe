@@ -7,4 +7,10 @@ export const siteConfig = {
     addressLocality: "Berlin",
     addressCountry: "DE",
   },
+  // Source: Google Business listing (Boliviana Café, formerly "Die Seele
+  // Boliviens"), confirmed 2026-09-13.
+  phone: {
+    display: "0176 97739948",
+    href: "+4917697739948",
+  },
 };

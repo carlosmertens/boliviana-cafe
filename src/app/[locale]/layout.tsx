@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 import { CafeJsonLd } from "@/components/CafeJsonLd";
+import { Footer } from "@/components/Footer";
 import "../globals.css";
 
 const jost = Jost({
@@ -57,7 +58,10 @@ export default async function LocaleLayout({
         >
           {t("skipToContent")}
         </a>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
         <CafeJsonLd />
       </body>
     </html>
