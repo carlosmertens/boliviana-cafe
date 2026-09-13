@@ -22,7 +22,7 @@ export function LocaleSwitcher() {
       onChange={(event) =>
         router.replace(pathname, { locale: event.target.value })
       }
-      className="rounded border border-zinc-300 bg-transparent px-2 py-1 text-sm dark:border-zinc-700"
+      className="border-boliviana-navy/20 text-boliviana-navy rounded-full border bg-transparent px-3 py-1.5 text-sm font-medium"
     >
       {routing.locales.map((code) => (
         <option key={code} value={code}>
