@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# reference material, not website assets
+/images
+
 # debug
 npm-debug.log*
 yarn-debug.log*
