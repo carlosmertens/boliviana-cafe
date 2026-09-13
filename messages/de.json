@@ -42,9 +42,8 @@
     "intro": "Winsstraße 17, 10405 Berlin – Kontaktdaten folgen in Kürze."
   },
   "hours": {
-    "closed": "Geschlossen"
-  },
-  "footer": {
-    "hoursTitle": "Öffnungszeiten"
+    "closed": "Geschlossen",
+    "openNow": "Jetzt geöffnet",
+    "closedNow": "Jetzt geschlossen"
   }
 }

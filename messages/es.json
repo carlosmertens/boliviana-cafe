@@ -42,9 +42,8 @@
     "intro": "Winsstraße 17, 10405 Berlín — datos de contacto próximamente."
   },
   "hours": {
-    "closed": "Cerrado"
-  },
-  "footer": {
-    "hoursTitle": "Horario"
+    "closed": "Cerrado",
+    "openNow": "Abierto ahora",
+    "closedNow": "Cerrado ahora"
   }
 }

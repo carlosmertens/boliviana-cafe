@@ -42,9 +42,8 @@
     "intro": "Winsstraße 17, 10405 Berlin — contact details coming soon."
   },
   "hours": {
-    "closed": "Closed"
-  },
-  "footer": {
-    "hoursTitle": "Opening Hours"
+    "closed": "Closed",
+    "openNow": "Open now",
+    "closedNow": "Closed now"
   }
 }
