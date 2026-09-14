@@ -1,18 +1,16 @@
 /**
  * The three partner brands under Boliviana's roof, in the order they appear
  * on the About page (food → coffee → wine, mirroring the physical space).
- *
- * Die Seele Boliviens has no separate external link here: its own Google
- * Business listing and Instagram were transferred to Boliviana itself (see
- * project-scope.md), so it links to the café's own menu instead of an
- * outside profile. Caraya Coffee and MiskiSimi kept their own accounts —
- * URLs confirmed 2026-09-14 via their public websites/Instagram profiles.
+ * Each keeps its own separate website and Instagram, even though Die Seele
+ * Boliviens' Instagram now also doubles as the café's own umbrella account
+ * (see project-scope.md's "Brand Accounts" section) — URLs confirmed
+ * 2026-09-15 via each brand's own public website/Instagram profile.
  */
 export interface PartnerBrand {
   id: "dieSeeleBoliviens" | "carayaCoffee" | "miskisimi";
   /** Maps to the boliviana-{color} design token used for this brand's accent. */
   color: "pink" | "navy" | "purple";
-  external?: {
+  external: {
     instagramHandle: string;
     instagramUrl: string;
     websiteUrl: string;
@@ -20,7 +18,15 @@ export interface PartnerBrand {
 }
 
 export const partnerBrands: PartnerBrand[] = [
-  { id: "dieSeeleBoliviens", color: "pink" },
+  {
+    id: "dieSeeleBoliviens",
+    color: "pink",
+    external: {
+      instagramHandle: "@die_seele_boliviens",
+      instagramUrl: "https://www.instagram.com/die_seele_boliviens",
+      websiteUrl: "https://dieseeleboliviens.com",
+    },
+  },
   {
     id: "carayaCoffee",
     color: "navy",
@@ -36,7 +42,7 @@ export const partnerBrands: PartnerBrand[] = [
     external: {
       instagramHandle: "@miskisimi_imports",
       instagramUrl: "https://www.instagram.com/miskisimi_imports/",
-      websiteUrl: "https://miskisimi.com/en",
+      websiteUrl: "https://miskisimi.com/",
     },
   },
 ];

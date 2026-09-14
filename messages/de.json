@@ -31,25 +31,25 @@
     "title": "Über Boliviana",
     "intro": "Die Seele Boliviens, Caraya Coffee und Miskisimi – drei bolivianische Marken, ein Café im Herzen von Berlin.",
     "lead": "Ein Café, drei Direkthandelsgeschichten aus Bolivien – erzählt ein Bissen, ein Schluck und eine Geschichte nach der anderen.",
-    "closing": "Folgt der ganzen Geschichte: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "story": "Jeden 6. August – Boliviens Unabhängigkeitstag – haben wir drei genau hier in der Winsstraße 17 Pop-up-Feiern veranstaltet, damals noch als Mieter:innen dieses Ortes von den vorherigen Betreiber:innen des Cafés. Die Seele Boliviens betrieb schon seit Jahren eine Ghost Kitchen nebenan mit handgemachten Salteñas und Gebäck, weshalb sich dieser Ort für uns immer wie zu Hause anfühlte. Als die vorherigen Betreiber:innen das Café schließen wollten, boten sie uns die Chance, aus diesen eintägigen Pop-ups etwas Dauerhaftes zu machen – ein Dach für die Gebäckkunst von Die Seele Boliviens, den Direkthandelskaffee von Caraya und die hochgelegenen Weine von MiskiSimi. Wir haben zugegriffen, um ein Stück Bolivien nach Berlin zu bringen: für die Bolivianer:innen hier, die ihre Heimat vermissen, und für alle anderen, die Lust haben, unsere Kultur, unser Essen, unseren Kaffee und unseren Wein zu entdecken.",
+    "storyDetail": "Die Seele Boliviens faltet jede Salteña noch immer von Hand nach traditioneller Art – ein goldener Teig um einen kräftigen, saftigen Eintopf, den man erst löffelt, bevor man hineinbeißt. Caraya arbeitet direkt mit den Anbauer:innen von Asocafé Bolivia zusammen und röstet Single-Origin-Partien, die überwiegend von Frauen produziert werden und sich mit den Jahreszeiten ändern. Und MiskiSimi bringt Weine mit, die auf 1.600 bis 3.000 Metern in den Anden wachsen, dazu Singani, Boliviens eigenen geschützten Geist und Herzstück eines echten Chuflay. Drei Handwerke, eine Seele Boliviens – mitten in Berlin.",
+    "visitWebsite": "Website besuchen",
+    "visitInstagram": "Instagram besuchen",
     "brands": {
       "dieSeeleBoliviens": {
         "chapterLabel": "Ein Bissen",
         "name": "Die Seele Boliviens",
-        "blurb": "Handgemachtes bolivianisches Gebäck – Salteñas, Cuñapés und Pucakapas, täglich frisch von Hand hergestellt nach Familienrezepten.",
-        "cta": "Zur Speisekarte"
+        "blurb": "Handgemachtes bolivianisches Gebäck – Salteñas, Cuñapés und Pucakapas, täglich frisch von Hand hergestellt nach Familienrezepten."
       },
       "carayaCoffee": {
         "chapterLabel": "Ein Schluck",
         "name": "Caraya Coffee",
-        "blurb": "Bolivianischer Spezialitätenkaffee – Bohnen direkt von bolivianischen Anbauer:innen importiert und in kleinen Mengen hier in Berlin geröstet.",
-        "cta": "@caraya_coffee"
+        "blurb": "Bolivianischer Spezialitätenkaffee – Bohnen direkt von bolivianischen Anbauer:innen importiert und in kleinen Mengen hier in Berlin geröstet."
       },
       "miskisimi": {
         "chapterLabel": "Eine Geschichte",
         "name": "MiskiSimi",
-        "blurb": "Bolivianischer Wein & Singani – hochgelegene Weine und Boliviens geschützter Nationalgeist, direkt von familiengeführten Weingütern importiert.",
-        "cta": "@miskisimi_imports"
+        "blurb": "Bolivianischer Wein & Singani – hochgelegene Weine und Boliviens geschützter Nationalgeist, direkt von familiengeführten Weingütern importiert."
       }
     }
   },
