@@ -63,7 +63,12 @@
   },
   "events": {
     "title": "Veranstaltungen",
-    "intro": "Coffee Cuppings, Barista-Kurse und kulturelle Feste – bleibt gespannt."
+    "intro": "Coffee Cuppings, Barista-Kurse und kulturelle Feste – das steht als Nächstes bei Boliviana an.",
+    "empty": "Aktuell keine anstehenden Veranstaltungen – schaut bald wieder vorbei.",
+    "register": "Anmelden",
+    "registrationRequired": "Anmeldung erforderlich – bitte an der Theke fragen",
+    "noRegistrationNeeded": "Keine Anmeldung nötig – einfach vorbeikommen",
+    "seePhotos": "Fotos ansehen"
   },
   "contact": {
     "title": "Kontakt",

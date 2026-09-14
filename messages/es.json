@@ -63,7 +63,12 @@
   },
   "events": {
     "title": "Próximos Eventos",
-    "intro": "Catas de café, cursos de barista y celebraciones culturales — mantente atento."
+    "intro": "Catas de café, cursos de barista y celebraciones culturales — esto es lo próximo en Boliviana.",
+    "empty": "No hay eventos próximos por ahora — vuelve pronto.",
+    "register": "Inscribirse",
+    "registrationRequired": "Inscripción requerida — pregunta en el mostrador",
+    "noRegistrationNeeded": "No requiere inscripción — solo ven",
+    "seePhotos": "Ver fotos"
   },
   "contact": {
     "title": "Contacto",

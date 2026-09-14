@@ -63,7 +63,12 @@
   },
   "events": {
     "title": "Upcoming Events",
-    "intro": "Coffee cuppings, barista courses, and cultural celebrations — stay tuned."
+    "intro": "Coffee cuppings, barista courses, and cultural celebrations — here's what's coming up at Boliviana.",
+    "empty": "No upcoming events right now — check back soon.",
+    "register": "Register",
+    "registrationRequired": "Registration required — ask at the counter",
+    "noRegistrationNeeded": "No registration needed — just show up",
+    "seePhotos": "See photos"
   },
   "contact": {
     "title": "Contact",
