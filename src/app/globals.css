@@ -19,7 +19,11 @@
  * across the site. This is separate from internal component states like
  * a dropdown's hovered/active option highlight, which can use another
  * brand color (e.g. purple) when needed for contrast against the page
- * background (see SelectMenu's option highlight).
+ * background (see SelectMenu's option highlight). The focus ring itself
+ * can also switch color when pink fails WCAG's 3:1 non-text contrast
+ * minimum against a specific background — e.g. AnnouncementBanner's
+ * dismiss button uses purple because pink-on-yellow only measures ~3.3:1
+ * (barely passing) versus purple's ~7.3:1.
  */
 
 body {

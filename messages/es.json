@@ -4,6 +4,12 @@
     "mainNavigation": "Navegación principal",
     "openMenu": "Abrir menú principal"
   },
+  "banner": {
+    "eventLabel": "Próximo evento",
+    "infoLabel": "Información",
+    "promotionLabel": "Promoción",
+    "dismiss": "Cerrar"
+  },
   "metadata": {
     "title": "Boliviana | Un Sabor de Bolivia",
     "description": "Boliviana reúne pastelería boliviana, café de especialidad y vino en el corazón de Berlín."
