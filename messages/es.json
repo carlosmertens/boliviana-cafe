@@ -29,7 +29,29 @@
   },
   "about": {
     "title": "Sobre Boliviana",
-    "intro": "Die Seele Boliviens, Caraya Coffee y Miskisimi — tres marcas bolivianas, un café en el corazón de Berlín. La historia completa llegará pronto."
+    "intro": "Die Seele Boliviens, Caraya Coffee y Miskisimi — tres marcas bolivianas, un café en el corazón de Berlín.",
+    "lead": "Un café, tres historias de comercio directo desde Bolivia — contadas un bocado, un sorbo y una historia a la vez.",
+    "closing": "Sigue toda la historia: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "brands": {
+      "dieSeeleBoliviens": {
+        "chapterLabel": "Un bocado",
+        "name": "Die Seele Boliviens",
+        "blurb": "Pastelería boliviana artesanal — salteñas, cuñapés y pucakapas hechas a mano cada día con recetas familiares.",
+        "cta": "Ver el menú"
+      },
+      "carayaCoffee": {
+        "chapterLabel": "Un sorbo",
+        "name": "Caraya Coffee",
+        "blurb": "Café de especialidad boliviano — granos importados directamente de productores bolivianos y tostados en pequeños lotes aquí en Berlín.",
+        "cta": "@caraya_coffee"
+      },
+      "miskisimi": {
+        "chapterLabel": "Una historia",
+        "name": "MiskiSimi",
+        "blurb": "Vino y Singani bolivianos — vinos de gran altitud y el espíritu nacional protegido de Bolivia, importados directamente de bodegas familiares.",
+        "cta": "@miskisimi_imports"
+      }
+    }
   },
   "menu": {
     "title": "Menú",

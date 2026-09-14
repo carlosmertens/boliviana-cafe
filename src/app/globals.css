@@ -44,3 +44,25 @@ body {
     0 0 72px rgba(122, 38, 191, 0.55),
     0 0 108px rgba(122, 38, 191, 0.35);
 }
+
+/*
+ * Abstract nod to the aguayo textile visible on the café's own tables
+ * (see images/table-sign-self-service.jpeg) — a repeating band of the
+ * site's own palette rather than an image asset. Used by AboutBrands
+ * (Proposal B) as a single unifying thread behind the brand chapters.
+ */
+.textile-stripe {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-boliviana-pink) 0%,
+    var(--color-boliviana-pink) 8%,
+    var(--color-boliviana-yellow) 8%,
+    var(--color-boliviana-yellow) 16%,
+    var(--color-boliviana-navy) 16%,
+    var(--color-boliviana-navy) 24%,
+    var(--color-boliviana-purple) 24%,
+    var(--color-boliviana-purple) 32%,
+    var(--color-boliviana-cream) 32%,
+    var(--color-boliviana-cream) 40%
+  );
+}
