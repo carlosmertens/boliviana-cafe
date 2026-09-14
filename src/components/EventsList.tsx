@@ -82,7 +82,7 @@ export function EventsList() {
   return (
     <main
       id="main-content"
-      className="flex flex-1 flex-col items-center px-6 py-20 sm:px-10"
+      className="hero-tint flex flex-1 flex-col items-center rounded-t-[3rem] px-6 py-24 shadow-[0_12px_30px_-18px_rgba(28,21,82,0.3)] sm:rounded-t-[4rem] sm:px-10"
     >
       <div className="flex max-w-2xl flex-col items-center gap-4 text-center">
         <h1 className="text-boliviana-navy text-4xl font-semibold sm:text-5xl">
