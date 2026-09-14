@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
+import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { CafeJsonLd } from "@/components/CafeJsonLd";
 import { Footer } from "@/components/Footer";
 import "../globals.css";
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
           {t("skipToContent")}
         </a>
         <NextIntlClientProvider>
+          <AnnouncementBanner />
           {children}
           <Footer />
         </NextIntlClientProvider>

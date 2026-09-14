@@ -53,7 +53,7 @@ This Next.js version has breaking changes from training-data-era Next.js — not
 
 Brand colors/fonts/radius are Tailwind v4 `@theme` tokens (`--color-boliviana-*`, `--font-sans`/`--font-script`, `--radius-control`) — sampled from the café's real brochures/signage, not arbitrary. Use these tokens (`bg-boliviana-pink`, `rounded-control`, etc.) rather than introducing new colors or radii.
 
-**Project rule:** every interactive element's keyboard-focus ring uses `focus-visible:outline-boliviana-pink`, everywhere — this is documented in a comment in `globals.css`. Exception: `SelectMenu`'s internal option-hover/selected highlight uses purple instead of pink (contrast reasons against pink backgrounds), and the footer's focus rings use white (pink fails contrast against the footer's purple/navy background). Any new interactive component should default to the pink rule unless there's a documented contrast reason not to.
+**Project rule:** every interactive element's keyboard-focus ring uses `focus-visible:outline-boliviana-pink`, everywhere — this is documented in a comment in `globals.css`. Exception: `SelectMenu`'s internal option-hover/selected highlight uses purple instead of pink (contrast reasons against pink backgrounds), the footer's focus rings use white (pink fails contrast against the footer's purple/navy background), and `AnnouncementBanner`'s dismiss button uses purple (pink-on-yellow only measures ~3.3:1 against WCAG's 3:1 non-text minimum, purple measures ~7.3:1). Any new interactive component should default to the pink rule unless there's a documented contrast reason not to — check contrast against the actual background before deviating.
 
 ### Reusable UI (`src/components/ui/`)
 
@@ -62,6 +62,10 @@ Brand colors/fonts/radius are Tailwind v4 `@theme` tokens (`--color-boliviana-*`
 ### SEO/structured data
 
 `src/lib/site.ts` holds real business facts (address, phone, Google Maps URL) sourced from the café's actual Google Business listing — don't invent or guess data here (e.g. no fabricated opening hours/phone). `src/lib/hours.ts` holds the real weekly schedule as data (`weeklyHours`) plus `groupedHours()` (merges consecutive same-status days into ranges for display) and `isOpenNow()` (Europe/Berlin timezone) — both `OpeningHoursAccordion` and `CafeJsonLd`'s `openingHoursSpecification` derive from this same source of truth. `src/app/sitemap.ts` and `src/app/robots.ts` enumerate the same locale × route list — keep them in sync if routes are added/removed.
+
+### Announcement banner
+
+`src/data/announcement.json` is the editable content source for the sitewide banner (`src/components/AnnouncementBanner.tsx`, rendered in `src/app/[locale]/layout.tsx` above every page): `enabled` is the master on/off switch, `events` is a list of upcoming events (soonest one that hasn't reached its `endTime` yet, Europe/Berlin, wins), and `info` is a fallback general notice used only when no event is currently upcoming. `src/lib/announcement.ts` (`getActiveAnnouncement()`) has the selection/expiry logic. The banner hides itself automatically once `enabled` is false or there's no current event and no `info` — no code change needed to "turn it off" between events, just edit the JSON. Each event/info entry has an `id`; dismissing the banner is remembered per-`id` in `localStorage`, so a new `id` (new event, or a bumped `info.id` after editing its message) automatically reappears for visitors who dismissed the old one. Set an entry's `dismissible: false` for notices that shouldn't be closeable (e.g. a holiday-closure or illness notice) — the dismiss button is omitted entirely for those; it defaults to `true` otherwise. Event/info titles and messages are per-locale objects inline in the JSON (not `messages/*.json`) since they're structured data rather than page copy.
 
 ### Accessibility
 

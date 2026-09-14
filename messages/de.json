@@ -4,6 +4,12 @@
     "mainNavigation": "Hauptnavigation",
     "openMenu": "Hauptmenü öffnen"
   },
+  "banner": {
+    "eventLabel": "Bevorstehende Veranstaltung",
+    "infoLabel": "Information",
+    "promotionLabel": "Angebot",
+    "dismiss": "Schließen"
+  },
   "metadata": {
     "title": "Boliviana | Ein Geschmack von Bolivien",
     "description": "Boliviana vereint bolivianisches Gebäck, Spezialitätenkaffee und Wein im Herzen von Berlin."

@@ -4,6 +4,12 @@
     "mainNavigation": "Main navigation",
     "openMenu": "Open main menu"
   },
+  "banner": {
+    "eventLabel": "Upcoming Event",
+    "infoLabel": "Information",
+    "promotionLabel": "Promotion",
+    "dismiss": "Dismiss"
+  },
   "metadata": {
     "title": "Boliviana | A Taste of Bolivia",
     "description": "Boliviana brings together Bolivian pastries, specialty coffee, and wine in the heart of Berlin."
