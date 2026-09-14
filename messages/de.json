@@ -29,7 +29,29 @@
   },
   "about": {
     "title": "Über Boliviana",
-    "intro": "Die Seele Boliviens, Caraya Coffee und Miskisimi – drei bolivianische Marken, ein Café im Herzen von Berlin. Die ganze Geschichte folgt in Kürze."
+    "intro": "Die Seele Boliviens, Caraya Coffee und Miskisimi – drei bolivianische Marken, ein Café im Herzen von Berlin.",
+    "lead": "Ein Café, drei Direkthandelsgeschichten aus Bolivien – erzählt ein Bissen, ein Schluck und eine Geschichte nach der anderen.",
+    "closing": "Folgt der ganzen Geschichte: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "brands": {
+      "dieSeeleBoliviens": {
+        "chapterLabel": "Ein Bissen",
+        "name": "Die Seele Boliviens",
+        "blurb": "Handgemachtes bolivianisches Gebäck – Salteñas, Cuñapés und Pucakapas, täglich frisch von Hand hergestellt nach Familienrezepten.",
+        "cta": "Zur Speisekarte"
+      },
+      "carayaCoffee": {
+        "chapterLabel": "Ein Schluck",
+        "name": "Caraya Coffee",
+        "blurb": "Bolivianischer Spezialitätenkaffee – Bohnen direkt von bolivianischen Anbauer:innen importiert und in kleinen Mengen hier in Berlin geröstet.",
+        "cta": "@caraya_coffee"
+      },
+      "miskisimi": {
+        "chapterLabel": "Eine Geschichte",
+        "name": "MiskiSimi",
+        "blurb": "Bolivianischer Wein & Singani – hochgelegene Weine und Boliviens geschützter Nationalgeist, direkt von familiengeführten Weingütern importiert.",
+        "cta": "@miskisimi_imports"
+      }
+    }
   },
   "menu": {
     "title": "Speisekarte",

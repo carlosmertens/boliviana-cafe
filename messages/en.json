@@ -29,7 +29,29 @@
   },
   "about": {
     "title": "About Boliviana",
-    "intro": "Die Seele Boliviens, Caraya Coffee, and Miskisimi — three Bolivian brands, one café in the heart of Berlin. Full story coming soon."
+    "intro": "Die Seele Boliviens, Caraya Coffee, and Miskisimi — three Bolivian brands, one café in the heart of Berlin.",
+    "lead": "One café, three direct-trade stories from Bolivia — told one bite, one sip, and one story at a time.",
+    "closing": "Follow the whole story: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "brands": {
+      "dieSeeleBoliviens": {
+        "chapterLabel": "One bite",
+        "name": "Die Seele Boliviens",
+        "blurb": "Handmade Bolivian pastries — salteñas, cuñapés, and pucakapas made fresh by hand every day from family recipes.",
+        "cta": "See the menu"
+      },
+      "carayaCoffee": {
+        "chapterLabel": "One sip",
+        "name": "Caraya Coffee",
+        "blurb": "Bolivian specialty coffee — beans imported directly from Bolivian growers and roasted in small batches right here in Berlin.",
+        "cta": "@caraya_coffee"
+      },
+      "miskisimi": {
+        "chapterLabel": "One story",
+        "name": "MiskiSimi",
+        "blurb": "Bolivian wine & Singani — high-altitude wines and Bolivia's protected national spirit, imported directly from family-run wineries.",
+        "cta": "@miskisimi_imports"
+      }
+    }
   },
   "menu": {
     "title": "Menu",
