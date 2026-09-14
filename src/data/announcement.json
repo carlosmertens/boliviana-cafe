@@ -1,17 +1,4 @@
 {
   "enabled": true,
-  "info": null,
-  "events": [
-    {
-      "id": "barista-course-2026-09-20",
-      "date": "2026-09-20",
-      "startTime": "10:00",
-      "endTime": "13:00",
-      "title": {
-        "de": "Barista-Kurs",
-        "en": "Barista Course",
-        "es": "Curso de Barista"
-      }
-    }
-  ]
+  "info": null
 }

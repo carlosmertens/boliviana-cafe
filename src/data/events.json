@@ -1,0 +1,45 @@
+{
+  "events": [
+    {
+      "id": "barista-course-2026-09-20",
+      "date": "2026-09-20",
+      "startTime": "10:00",
+      "endTime": "13:00",
+      "title": {
+        "de": "Barista-Kurs",
+        "en": "Barista Course",
+        "es": "Curso de Barista"
+      },
+      "description": {
+        "de": "Einsteiger-Workshop (Level 0–1) – Espresso-Grundlagen, Milchaufschäumen und Maschinenpflege in kleinen Gruppen von 4–6 Personen, direkt hier bei Boliviana.",
+        "en": "Level 0–1 beginner workshop — espresso basics, milk steaming, and machine care in small groups of 4–6, hosted right here at Boliviana.",
+        "es": "Taller para principiantes (nivel 0–1) — fundamentos del espresso, espumado de leche y cuidado de la máquina en grupos pequeños de 4 a 6 personas, aquí mismo en Boliviana."
+      },
+      "registrationRequired": true,
+      "registrationUrl": "https://www.caraya-coffee.com/baristakurs-level-0-119.html"
+    },
+    {
+      "id": "dia-de-santa-cruz-2026-09-25",
+      "date": "2026-09-25",
+      "startTime": "17:00",
+      "endTime": "22:00",
+      "title": {
+        "de": "Día de Santa Cruz + Frühlingsfest",
+        "en": "Día de Santa Cruz + Spring Party",
+        "es": "Día de Santa Cruz + Fiesta de Primavera"
+      },
+      "description": {
+        "de": "Wir feiern den Gründungstag von Santa Cruz mit Live-Musik und einem Klassiker aus dem bolivianischen Tiefland: Sonso, ein gebackener Auflauf aus Maniokbrei und Käse. Ein beliebter Snack aus Santa Cruz, der zu jeder Tageszeit genossen wird – am häufigsten aber zur Kaffeezeit gegen 16–17 Uhr.",
+        "en": "Celebrating Santa Cruz's founding day with live music and a lowland classic: sonso, a baked casserole of mashed cassava and cheese — a Santa Cruz favorite enjoyed any time of day, though most often around coffee time, 4–5pm.",
+        "es": "Celebramos el día de la fundación de Santa Cruz con música en vivo y un clásico del oriente boliviano: el sonso, un horneado de puré de yuca y queso — un favorito de Santa Cruz que se disfruta a cualquier hora del día, aunque más comúnmente a la hora del café, entre las 16 y las 17."
+      },
+      "learnMoreUrl": "https://www.google.com/search?q=sonso+boliviano&udm=2",
+      "learnMoreLabel": {
+        "de": "Fotos auf Google ansehen",
+        "en": "See photos on Google",
+        "es": "Ver fotos en Google"
+      },
+      "registrationRequired": false
+    }
+  ]
+}
