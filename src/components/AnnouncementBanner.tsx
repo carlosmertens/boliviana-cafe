@@ -67,7 +67,7 @@ export function AnnouncementBanner() {
       ? t("promotionLabel")
       : t("infoLabel");
   const dateLine = isEvent
-    ? `${format.dateTime(new Date(`${announcement.date}T00:00:00`), { weekday: "short", day: "numeric", month: "short" })} · ${announcement.startTime}–${announcement.endTime}`
+    ? `${format.dateTime(new Date(`${announcement.date}T00:00:00Z`), { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })} · ${announcement.startTime}–${announcement.endTime}`
     : announcement.dateLabel?.[locale];
   const detail = isEvent
     ? announcement.title[locale]
