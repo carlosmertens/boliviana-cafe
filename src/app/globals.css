@@ -46,6 +46,34 @@ body {
 }
 
 /*
+ * Crossed-diagonal wash for every page except the homepage (which keeps its
+ * own solid bg-boliviana-pink hero) — paired with rounded-t-[3rem] and a
+ * soft shadow on that page's <main> to echo the homepage hero's curvy shape
+ * without repainting the page a solid color. Two layered diagonals: navy
+ * (top-left) to pink (bottom-right), and pink (top-right) to navy
+ * (bottom-left), each faded to transparent at the midpoint rather than
+ * mixed into opaque cream — layering them (not averaging) is what gives all
+ * four corners their own tint with a clear, untinted cream cross through
+ * the middle, instead of collapsing into a single left-to-right blend.
+ */
+.hero-tint {
+  background-color: var(--color-boliviana-cream);
+  background-image:
+    linear-gradient(
+      to bottom right,
+      color-mix(in srgb, var(--color-boliviana-navy) 8%, transparent) 0%,
+      transparent 50%,
+      color-mix(in srgb, var(--color-boliviana-pink) 8%, transparent) 100%
+    ),
+    linear-gradient(
+      to bottom left,
+      color-mix(in srgb, var(--color-boliviana-pink) 8%, transparent) 0%,
+      transparent 50%,
+      color-mix(in srgb, var(--color-boliviana-navy) 8%, transparent) 100%
+    );
+}
+
+/*
  * Abstract nod to the aguayo textile visible on the café's own tables
  * (see images/table-sign-self-service.jpeg) — a repeating band of the
  * site's own palette rather than an image asset. Used by AboutBrands

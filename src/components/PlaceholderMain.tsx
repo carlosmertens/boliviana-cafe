@@ -12,7 +12,7 @@ export function PlaceholderMain({ namespace }: PlaceholderMainProps) {
   return (
     <main
       id="main-content"
-      className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-20 text-center"
+      className="hero-tint flex flex-1 flex-col items-center justify-center gap-4 rounded-t-[3rem] px-6 py-24 text-center shadow-[0_12px_30px_-18px_rgba(28,21,82,0.3)] sm:rounded-t-[4rem]"
     >
       <h1 className="text-boliviana-navy text-4xl font-semibold sm:text-5xl">
         {t("title")}
