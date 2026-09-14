@@ -31,25 +31,25 @@
     "title": "Sobre Boliviana",
     "intro": "Die Seele Boliviens, Caraya Coffee y Miskisimi — tres marcas bolivianas, un café en el corazón de Berlín.",
     "lead": "Un café, tres historias de comercio directo desde Bolivia — contadas un bocado, un sorbo y una historia a la vez.",
-    "closing": "Sigue toda la historia: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "story": "Cada 6 de agosto —el día de la independencia de Bolivia— los tres organizábamos eventos pop-up aquí mismo, en Winsstraße 17, cuando aún alquilábamos este local a quienes antes llevaban el café. Die Seele Boliviens ya llevaba años con una cocina fantasma justo al lado, sirviendo salteñas y pastelería hechas a mano, así que este lugar siempre se sintió como en casa. Cuando quienes llevaban el café antes decidieron cerrarlo, nos dieron la oportunidad de convertir esos pop-ups de un día en algo permanente: un mismo techo para la pastelería de Die Seele Boliviens, el café de comercio directo de Caraya y los vinos de altura de MiskiSimi. Aceptamos, con las ganas de traer un poco de Bolivia a Berlín, tanto para los bolivianos que extrañan su tierra como para todos los demás que quieran descubrir nuestra cultura, comida, café y vino.",
+    "storyDetail": "Die Seele Boliviens sigue doblando cada salteña a mano, a la manera tradicional: una masa dorada que envuelve un guiso jugoso que se sorbe antes de morder. Caraya trabaja directamente con los productores de Asocafé Bolivia, tostando lotes de origen único, mayoritariamente producidos por mujeres, que cambian con la temporada. Y MiskiSimi trae vinos cultivados entre 1.600 y 3.000 metros en los Andes, además del Singani, el espíritu propio y protegido de Bolivia, corazón de un buen Chuflay. Tres oficios, una sola alma de Bolivia — aquí en Berlín.",
+    "visitWebsite": "Visitar web",
+    "visitInstagram": "Visitar Instagram",
     "brands": {
       "dieSeeleBoliviens": {
         "chapterLabel": "Un bocado",
         "name": "Die Seele Boliviens",
-        "blurb": "Pastelería boliviana artesanal — salteñas, cuñapés y pucakapas hechas a mano cada día con recetas familiares.",
-        "cta": "Ver el menú"
+        "blurb": "Pastelería boliviana artesanal — salteñas, cuñapés y pucakapas hechas a mano cada día con recetas familiares."
       },
       "carayaCoffee": {
         "chapterLabel": "Un sorbo",
         "name": "Caraya Coffee",
-        "blurb": "Café de especialidad boliviano — granos importados directamente de productores bolivianos y tostados en pequeños lotes aquí en Berlín.",
-        "cta": "@caraya_coffee"
+        "blurb": "Café de especialidad boliviano — granos importados directamente de productores bolivianos y tostados en pequeños lotes aquí en Berlín."
       },
       "miskisimi": {
         "chapterLabel": "Una historia",
         "name": "MiskiSimi",
-        "blurb": "Vino y Singani bolivianos — vinos de gran altitud y el espíritu nacional protegido de Bolivia, importados directamente de bodegas familiares.",
-        "cta": "@miskisimi_imports"
+        "blurb": "Vino y Singani bolivianos — vinos de gran altitud y el espíritu nacional protegido de Bolivia, importados directamente de bodegas familiares."
       }
     }
   },

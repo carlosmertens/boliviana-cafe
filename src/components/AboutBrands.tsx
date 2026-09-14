@@ -1,6 +1,5 @@
 import { StarIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { partnerBrands, type PartnerBrand } from "@/lib/brands";
 
 const icons = {
@@ -23,6 +22,7 @@ const underlineColors = {
 
 function BrandChapter({ brand }: { brand: PartnerBrand }) {
   const t = useTranslations(`about.brands.${brand.id}`);
+  const tCommon = useTranslations("about");
   const Icon = icons[brand.id];
 
   return (
@@ -43,23 +43,24 @@ function BrandChapter({ brand }: { brand: PartnerBrand }) {
         <p className="text-boliviana-navy/80 mt-1 max-w-xl">{t("blurb")}</p>
       </div>
 
-      {brand.external ? (
+      <div className="flex shrink-0 flex-col items-start gap-1 sm:items-end">
+        <a
+          href={brand.external.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control text-sm font-medium underline decoration-1 underline-offset-4 outline-offset-2 focus-visible:outline-2"
+        >
+          {tCommon("visitWebsite")} →
+        </a>
         <a
           href={brand.external.instagramUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control shrink-0 text-sm font-medium underline decoration-1 underline-offset-4 outline-offset-2 focus-visible:outline-2"
+          className="text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control text-sm font-medium underline decoration-1 underline-offset-4 outline-offset-2 focus-visible:outline-2"
         >
-          {t("cta")} →
+          {tCommon("visitInstagram")} →
         </a>
-      ) : (
-        <Link
-          href="/menu"
-          className="text-boliviana-navy focus-visible:outline-boliviana-pink rounded-control shrink-0 text-sm font-medium underline decoration-1 underline-offset-4 outline-offset-2 focus-visible:outline-2"
-        >
-          {t("cta")} →
-        </Link>
-      )}
+      </div>
     </div>
   );
 }
@@ -80,6 +81,12 @@ export function AboutBrands() {
         <p className="text-boliviana-navy/80 max-w-xl text-lg text-balance">
           {t("lead")}
         </p>
+        <p className="text-boliviana-navy/70 max-w-xl text-balance">
+          {t("story")}
+        </p>
+        <p className="text-boliviana-navy/70 max-w-xl text-balance">
+          {t("storyDetail")}
+        </p>
       </div>
 
       <div
@@ -97,8 +104,6 @@ export function AboutBrands() {
         aria-hidden="true"
         className="textile-stripe mt-10 h-1.5 w-24 rounded-full"
       />
-
-      <p className="text-boliviana-navy/70 mt-6 text-sm">{t("closing")}</p>
     </main>
   );
 }

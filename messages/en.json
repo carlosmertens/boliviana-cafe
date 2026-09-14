@@ -31,25 +31,25 @@
     "title": "About Boliviana",
     "intro": "Die Seele Boliviens, Caraya Coffee, and Miskisimi — three Bolivian brands, one café in the heart of Berlin.",
     "lead": "One café, three direct-trade stories from Bolivia — told one bite, one sip, and one story at a time.",
-    "closing": "Follow the whole story: @die_seele_boliviens · @caraya_coffee · @miskisimi_imports",
+    "story": "Every August 6th — Bolivia's Independence Day — the three of us used to throw pop-up celebrations right here at Winsstraße 17, back when we were renting this space from the café's previous owners. Die Seele Boliviens already ran a ghost kitchen next door serving handmade salteñas and pastries, so this place always felt like home to us. When the previous owners decided to close up, they offered us the chance to turn those one-day pop-ups into something permanent — one roof for Die Seele Boliviens' pastries, Caraya's direct-trade coffee, and MiskiSimi's high-altitude wines. We took the chance, wanting to bring a taste of Bolivia to Berlin: for the Bolivians here missing home, and for everyone else curious to discover our culture, food, coffee, and wine.",
+    "storyDetail": "Die Seele Boliviens still hand-folds every salteña the traditional way — a golden pastry holding a rich, juicy stew you sip before you take the first bite. Caraya works directly with growers from Asocafé Bolivia, roasting single-origin lots that are mostly women-produced and change with the season. And MiskiSimi brings down wines grown at 1,600 to 3,000 meters in the Andes, plus Singani, Bolivia's own protected spirit and the heart of a proper Chuflay. Three crafts, one soul of Bolivia — right here in Berlin.",
+    "visitWebsite": "Visit website",
+    "visitInstagram": "Visit Instagram",
     "brands": {
       "dieSeeleBoliviens": {
         "chapterLabel": "One bite",
         "name": "Die Seele Boliviens",
-        "blurb": "Handmade Bolivian pastries — salteñas, cuñapés, and pucakapas made fresh by hand every day from family recipes.",
-        "cta": "See the menu"
+        "blurb": "Handmade Bolivian pastries — salteñas, cuñapés, and pucakapas made fresh by hand every day from family recipes."
       },
       "carayaCoffee": {
         "chapterLabel": "One sip",
         "name": "Caraya Coffee",
-        "blurb": "Bolivian specialty coffee — beans imported directly from Bolivian growers and roasted in small batches right here in Berlin.",
-        "cta": "@caraya_coffee"
+        "blurb": "Bolivian specialty coffee — beans imported directly from Bolivian growers and roasted in small batches right here in Berlin."
       },
       "miskisimi": {
         "chapterLabel": "One story",
         "name": "MiskiSimi",
-        "blurb": "Bolivian wine & Singani — high-altitude wines and Bolivia's protected national spirit, imported directly from family-run wineries.",
-        "cta": "@miskisimi_imports"
+        "blurb": "Bolivian wine & Singani — high-altitude wines and Bolivia's protected national spirit, imported directly from family-run wineries."
       }
     }
   },
