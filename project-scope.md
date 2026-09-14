@@ -33,6 +33,12 @@ The website should carry this same spirit: warm, vibrant, proud of its heritage,
 - A recurring note worth surfacing somewhere (menu/about): products are handmade fresh daily, so not everything is always available — invite people to ask at the counter.
 - Self-service model: order and pay at the counter, not table service — good to set expectations before someone visits.
 
+## Brand Accounts & External Links
+
+- **Google Business listing and Instagram handle for the café itself** (used for `src/lib/site.ts`, the map link, and the main Instagram link on the site) originally belonged to **Die Seele Boliviens** and have since been transferred to **Boliviana** — treat these as the café's own accounts now, not Die Seele Boliviens'.
+- **Caraya Coffee** and **Miskisimi** keep their own separate Instagram handles and whatever Google Business listing they individually have — don't conflate these with the café's own, and link out to each brand's own accounts/site individually (see Gallery and About Us sections).
+- **Per-brand websites:** each partner has (or is meant to have) its own website to link out to for "learn more." Die Seele Boliviens' own website is currently under renovation/unavailable — don't link to it as live until confirmed working again; ask before adding a placeholder or broken link.
+
 ## Pages & Content
 
 ### Landing Page
