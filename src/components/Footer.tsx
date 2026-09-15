@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site";
 import { OpeningHoursAccordion } from "@/components/OpeningHoursAccordion";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
   return (
@@ -18,9 +19,17 @@ export function Footer() {
         <OpeningHoursAccordion />
       </div>
 
-      <p className="text-boliviana-cream/70 mx-auto mt-6 max-w-7xl text-xs">
-        © {new Date().getFullYear()} {siteConfig.name}
-      </p>
+      <div className="mx-auto mt-6 flex max-w-7xl items-center justify-between text-xs">
+        <p className="text-boliviana-cream/70">
+          © {new Date().getFullYear()} {siteConfig.name}
+        </p>
+        <Link
+          href="/impressum"
+          className="text-boliviana-cream/70 rounded-control outline-offset-2 hover:text-white focus-visible:outline-2 focus-visible:outline-white"
+        >
+          Impressum
+        </Link>
+      </div>
     </footer>
   );
 }

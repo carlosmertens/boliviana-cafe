@@ -92,5 +92,9 @@
     "closed": "Cerrado",
     "openNow": "Abierto ahora",
     "closedNow": "Cerrado ahora"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "intro": "Este aviso legal se presenta en alemán, conforme a la legislación alemana."
   }
 }

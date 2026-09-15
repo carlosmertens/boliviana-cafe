@@ -92,5 +92,9 @@
     "closed": "Closed",
     "openNow": "Open now",
     "closedNow": "Closed now"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "intro": "This legal notice is provided in German, as required under German law."
   }
 }
