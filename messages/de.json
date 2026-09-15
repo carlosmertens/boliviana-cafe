@@ -92,5 +92,9 @@
     "closed": "Geschlossen",
     "openNow": "Jetzt geöffnet",
     "closedNow": "Jetzt geschlossen"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "intro": "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)."
   }
 }
