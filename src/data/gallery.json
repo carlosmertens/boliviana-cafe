@@ -1,6 +1,119 @@
 {
   "sections": [
     {
+      "id": "carayaCoffee",
+      "photos": [
+        {
+          "id": "caraya-1",
+          "src": "/images/gallery/caraya-1.jpg",
+          "width": 980,
+          "height": 979,
+          "instagramUrl": "https://www.instagram.com/p/DadtWzIMcyy/",
+          "alt": {
+            "de": "Latte-Art-Duo auf einem Aguayo-Textil",
+            "en": "Latte art duo on an aguayo textile",
+            "es": "Dúo de latte art sobre un textil aguayo"
+          }
+        },
+        {
+          "id": "caraya-2",
+          "src": "/images/gallery/caraya-2.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/Dbq4JzBDPTM/",
+          "alt": {
+            "de": "Jutesack von Caraya Coffee mit dem Logo der Rösterei",
+            "en": "Caraya Coffee's burlap sack, stamped with the roastery's logo",
+            "es": "Saco de yute de Caraya Coffee con el logotipo de la tostaduría"
+          }
+        },
+        {
+          "id": "caraya-3",
+          "src": "/images/gallery/caraya-3.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/DdCCfhygtP0/",
+          "alt": {
+            "de": "Eine einzelne geröstete Kaffeebohne",
+            "en": "A single roasted coffee bean",
+            "es": "Un solo grano de café tostado"
+          }
+        },
+        {
+          "id": "caraya-4",
+          "src": "/images/gallery/caraya-4.jpg",
+          "width": 980,
+          "height": 1186,
+          "instagramUrl": "https://www.instagram.com/p/Dc8zwucjFkZ/",
+          "alt": {
+            "de": "Caraya Coffees mobiler Kaffeewagen",
+            "en": "Caraya Coffee's mobile coffee cart",
+            "es": "El carrito móvil de café de Caraya Coffee"
+          }
+        },
+        {
+          "id": "caraya-5",
+          "src": "/images/gallery/caraya-5.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/DcVLZt4DDrG/",
+          "alt": {
+            "de": "Eine Tasse Filterkaffee mit Herkunfts- und Geschmacksnotizen",
+            "en": "A cup of filter coffee with its origin tasting notes",
+            "es": "Una taza de café de filtro con sus notas de origen y cata"
+          }
+        },
+        {
+          "id": "caraya-6",
+          "src": "/images/gallery/caraya-6.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcfVxf-jHZk/",
+          "alt": {
+            "de": "Blick über die Kaffeefinca in den bolivianischen Yungas",
+            "en": "View over the coffee finca in the Bolivian Yungas",
+            "es": "Vista de la finca de café en los Yungas bolivianos"
+          }
+        },
+        {
+          "id": "caraya-7",
+          "src": "/images/gallery/caraya-7.jpg",
+          "width": 630,
+          "height": 768,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcJsmpSjH5j/",
+          "alt": {
+            "de": "Eine Pflückerin erntet reife Kaffeekirschen von Hand",
+            "en": "A picker hand-harvesting ripe coffee cherries",
+            "es": "Una recolectora cosechando a mano cerezas de café maduras"
+          }
+        },
+        {
+          "id": "caraya-8",
+          "src": "/images/gallery/caraya-8.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Db_lUkJDDqA/",
+          "alt": {
+            "de": "Eine Emaille-Tasse mit der Aufschrift 'Bolivian Specialty Coffee' auf einem Aguayo-Textil",
+            "en": "An enamel mug reading 'Bolivian Specialty Coffee' on an aguayo textile",
+            "es": "Una taza esmaltada con la leyenda 'Bolivian Specialty Coffee' sobre un textil aguayo"
+          }
+        },
+        {
+          "id": "caraya-9",
+          "src": "/images/gallery/caraya-9.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Dc1gAaEjKzu/",
+          "alt": {
+            "de": "Der Bohnenbehälter des zweiten Mahlwerks, markiert mit 'Seasonal'",
+            "en": "The second grinder's bean hopper, labeled 'Seasonal'",
+            "es": "La tolva de granos del segundo molinillo, etiquetada 'Seasonal'"
+          }
+        }
+      ]
+    },
+    {
       "id": "dieSeeleBoliviens",
       "photos": [
         {
@@ -121,119 +234,6 @@
             "de": "Eine Kundin genießt eine Salteña im warmen Licht des Cafés",
             "en": "A customer enjoying a salteña in the café's warm window light",
             "es": "Una clienta disfrutando una salteña con la cálida luz del café"
-          }
-        }
-      ]
-    },
-    {
-      "id": "carayaCoffee",
-      "photos": [
-        {
-          "id": "caraya-1",
-          "src": "/images/gallery/caraya-1.jpg",
-          "width": 980,
-          "height": 979,
-          "instagramUrl": "https://www.instagram.com/p/DadtWzIMcyy/",
-          "alt": {
-            "de": "Latte-Art-Duo auf einem Aguayo-Textil",
-            "en": "Latte art duo on an aguayo textile",
-            "es": "Dúo de latte art sobre un textil aguayo"
-          }
-        },
-        {
-          "id": "caraya-2",
-          "src": "/images/gallery/caraya-2.jpg",
-          "width": 980,
-          "height": 1226,
-          "instagramUrl": "https://www.instagram.com/p/Dbq4JzBDPTM/",
-          "alt": {
-            "de": "Jutesack von Caraya Coffee mit dem Logo der Rösterei",
-            "en": "Caraya Coffee's burlap sack, stamped with the roastery's logo",
-            "es": "Saco de yute de Caraya Coffee con el logotipo de la tostaduría"
-          }
-        },
-        {
-          "id": "caraya-3",
-          "src": "/images/gallery/caraya-3.jpg",
-          "width": 980,
-          "height": 1226,
-          "instagramUrl": "https://www.instagram.com/p/DdCCfhygtP0/",
-          "alt": {
-            "de": "Eine einzelne geröstete Kaffeebohne",
-            "en": "A single roasted coffee bean",
-            "es": "Un solo grano de café tostado"
-          }
-        },
-        {
-          "id": "caraya-4",
-          "src": "/images/gallery/caraya-4.jpg",
-          "width": 980,
-          "height": 1186,
-          "instagramUrl": "https://www.instagram.com/p/Dc8zwucjFkZ/",
-          "alt": {
-            "de": "Caraya Coffees mobiler Kaffeewagen",
-            "en": "Caraya Coffee's mobile coffee cart",
-            "es": "El carrito móvil de café de Caraya Coffee"
-          }
-        },
-        {
-          "id": "caraya-5",
-          "src": "/images/gallery/caraya-5.jpg",
-          "width": 980,
-          "height": 1226,
-          "instagramUrl": "https://www.instagram.com/p/DcVLZt4DDrG/",
-          "alt": {
-            "de": "Eine Tasse Filterkaffee mit Herkunfts- und Geschmacksnotizen",
-            "en": "A cup of filter coffee with its origin tasting notes",
-            "es": "Una taza de café de filtro con sus notas de origen y cata"
-          }
-        },
-        {
-          "id": "caraya-6",
-          "src": "/images/gallery/caraya-6.jpg",
-          "width": 630,
-          "height": 752,
-          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcfVxf-jHZk/",
-          "alt": {
-            "de": "Blick über die Kaffeefinca in den bolivianischen Yungas",
-            "en": "View over the coffee finca in the Bolivian Yungas",
-            "es": "Vista de la finca de café en los Yungas bolivianos"
-          }
-        },
-        {
-          "id": "caraya-7",
-          "src": "/images/gallery/caraya-7.jpg",
-          "width": 630,
-          "height": 768,
-          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcJsmpSjH5j/",
-          "alt": {
-            "de": "Eine Pflückerin erntet reife Kaffeekirschen von Hand",
-            "en": "A picker hand-harvesting ripe coffee cherries",
-            "es": "Una recolectora cosechando a mano cerezas de café maduras"
-          }
-        },
-        {
-          "id": "caraya-8",
-          "src": "/images/gallery/caraya-8.jpg",
-          "width": 630,
-          "height": 752,
-          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Db_lUkJDDqA/",
-          "alt": {
-            "de": "Eine Emaille-Tasse mit der Aufschrift 'Bolivian Specialty Coffee' auf einem Aguayo-Textil",
-            "en": "An enamel mug reading 'Bolivian Specialty Coffee' on an aguayo textile",
-            "es": "Una taza esmaltada con la leyenda 'Bolivian Specialty Coffee' sobre un textil aguayo"
-          }
-        },
-        {
-          "id": "caraya-9",
-          "src": "/images/gallery/caraya-9.jpg",
-          "width": 630,
-          "height": 752,
-          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Dc1gAaEjKzu/",
-          "alt": {
-            "de": "Der Bohnenbehälter des zweiten Mahlwerks, markiert mit 'Seasonal'",
-            "en": "The second grinder's bean hopper, labeled 'Seasonal'",
-            "es": "La tolva de granos del segundo molinillo, etiquetada 'Seasonal'"
           }
         }
       ]

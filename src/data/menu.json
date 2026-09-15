@@ -1,6 +1,250 @@
 {
   "sections": [
     {
+      "id": "carayaCoffee",
+      "intro": {
+        "de": "Unsere bolivianischen Kaffeebohnen werden direkt importiert und von Caraya Coffee selbst geröstet.",
+        "en": "Our Bolivian coffee beans are directly imported and roasted by Caraya Coffee.",
+        "es": "Nuestros granos de café boliviano se importan directamente y son tostados por Caraya Coffee."
+      },
+      "categories": [
+        {
+          "id": "coffee",
+          "title": {
+            "de": "Kaffee",
+            "en": "Coffee",
+            "es": "Café"
+          },
+          "items": [
+            {
+              "id": "espresso",
+              "name": {
+                "de": "Espresso",
+                "en": "Espresso",
+                "es": "Espresso"
+              },
+              "price": 3.0
+            },
+            {
+              "id": "espresso-double",
+              "name": {
+                "de": "Espresso Doppelt",
+                "en": "Espresso Double",
+                "es": "Espresso Doble"
+              },
+              "price": 3.9
+            },
+            {
+              "id": "americano",
+              "name": {
+                "de": "Americano",
+                "en": "Americano",
+                "es": "Americano"
+              },
+              "price": 3.9
+            },
+            {
+              "id": "cortado",
+              "name": {
+                "de": "Cortado",
+                "en": "Cortado",
+                "es": "Cortado"
+              },
+              "price": 3.9
+            },
+            {
+              "id": "cappuccino",
+              "name": {
+                "de": "Cappuccino",
+                "en": "Cappuccino",
+                "es": "Capuchino"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "flat-white",
+              "name": {
+                "de": "Flat White",
+                "en": "Flat White",
+                "es": "Flat White"
+              },
+              "price": 4.8
+            },
+            {
+              "id": "batch-brew",
+              "name": {
+                "de": "Batch Brew",
+                "en": "Batch Brew",
+                "es": "Batch Brew"
+              },
+              "price": 3.6
+            },
+            {
+              "id": "hand-filter",
+              "name": {
+                "de": "Handfilter (290ml)",
+                "en": "Hand Filter (290ml)",
+                "es": "Filtro de Mano (290ml)"
+              },
+              "price": 5.8
+            }
+          ]
+        },
+        {
+          "id": "choose-bean",
+          "title": {
+            "de": "Wähle deine Bohne",
+            "en": "Choose Your Bean",
+            "es": "Elige tu Grano"
+          },
+          "description": {
+            "de": "Die direkte Zusammenarbeit mit den Kaffeeproduzent:innen erlaubt es uns, die unglaubliche Vielfalt des bolivianischen Kaffees zu zeigen – in großer Höhe angebaut, sorgfältig geerntet und geröstet, um den Charakter jeder Bohne hervorzuheben. Wähle deine Bohne an der Bar.",
+            "en": "Working directly with coffee producers lets us showcase the incredible diversity of Bolivian coffee — grown at high altitude, carefully harvested and roasted to highlight the character of every bean. Choose your bean at the bar.",
+            "es": "Trabajar directamente con los productores de café nos permite mostrar la increíble diversidad del café boliviano — cultivado en altura, cuidadosamente cosechado y tostado para resaltar el carácter de cada grano. Elige tu grano en la barra."
+          },
+          "items": [
+            {
+              "id": "catuai-blend",
+              "name": {
+                "de": "Catuaí-Blend, mittel-dunkel",
+                "en": "Medium Dark Catuai Blend",
+                "es": "Mezcla Catuaí, Tueste Medio-Oscuro"
+              },
+              "description": {
+                "de": "Wir arbeiten seit 2022 mit Asocafé Bolivia zusammen. Ihr Catuaí-Blend wird mittel-dunkel geröstet, um seine natürliche Süße zu betonen – Noten von Mandel, Milchschokolade und gelben Steinfrüchten. Als Espresso reicher und würziger, als Cappuccino cremig nach Mandel und Milchschokolade, als Americano honigartig süß mit Anklängen von Pflaume und Kirsche.",
+                "en": "We've been working with Asocafé Bolivia since 2022. Their Catuai Blend is roasted to a medium-dark profile that highlights its natural sweetness — notes of almond, milk chocolate and yellow stone fruit. Richer and spicier as an espresso; creamy almond and milk chocolate as a cappuccino; honey-like sweetness with hints of plum and cherry as an Americano.",
+                "es": "Trabajamos con Asocafé Bolivia desde 2022. Su mezcla Catuaí se tuesta a un perfil medio-oscuro que resalta su dulzura natural — notas de almendra, chocolate con leche y fruta de hueso amarilla. Como espresso, más intenso y especiado; como capuchino, cremoso con almendra y chocolate con leche; como americano, dulzura similar a la miel con toques de ciruela y cereza."
+              }
+            },
+            {
+              "id": "seasonal-light-roast",
+              "name": {
+                "de": "Saisonale Helle Röstung",
+                "en": "Seasonal Light Roast",
+                "es": "Tueste Claro de Temporada"
+              },
+              "description": {
+                "de": "Herausragende Partien von Kleinbauern und -bäuerinnen aus ganz Bolivien, hell geröstet, um die bemerkenswerte Vielfalt des Landes zu zeigen – lebendige Säure, blumige Aromen oder außergewöhnliche Süße. Einzellage, meist von Frauen produziert, immer Single Origin Bolivien. Wechselt alle sechs Wochen – frag uns nach dem aktuellen Saisonkaffee.",
+                "en": "Outstanding lots from smallholder farmers across Bolivia, roasted light to showcase the country's remarkable diversity — vibrant acidity, floral aromas or exceptional sweetness. Single finca, mostly women-produced, always single origin Bolivia. Changing every six weeks — ask us about today's seasonal coffee.",
+                "es": "Lotes excepcionales de pequeños productores de toda Bolivia, con tueste claro para mostrar la notable diversidad del país — acidez vibrante, aromas florales o dulzura excepcional. Finca única, mayormente producido por mujeres, siempre de origen único boliviano. Cambia cada seis semanas — pregúntanos por el café de temporada de hoy."
+              }
+            }
+          ]
+        },
+        {
+          "id": "tea-matcha",
+          "title": {
+            "de": "Tee & Matcha",
+            "en": "Tea & Matcha",
+            "es": "Té y Matcha"
+          },
+          "items": [
+            {
+              "id": "te-de-sultana",
+              "name": {
+                "de": "Té de Sultana",
+                "en": "Té de Sultana",
+                "es": "Té de Sultana"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "seasonal-tea",
+              "name": {
+                "de": "Saisonaler Tee",
+                "en": "Seasonal Tea",
+                "es": "Té de Temporada"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "kyoto-matcha-latte",
+              "name": {
+                "de": "Kyoto Matcha Latte",
+                "en": "Kyoto Matcha Latte",
+                "es": "Kyoto Matcha Latte"
+              },
+              "price": 4.9
+            },
+            {
+              "id": "chai-tea-latte",
+              "name": {
+                "de": "Chai Tea Latte",
+                "en": "Chai Tea Latte",
+                "es": "Chai Tea Latte"
+              },
+              "price": 4.8
+            },
+            {
+              "id": "kyoto-barista-matcha-latte",
+              "name": {
+                "de": "Kyoto Barista Matcha Latte",
+                "en": "Kyoto Barista Matcha Latte",
+                "es": "Kyoto Barista Matcha Latte"
+              },
+              "description": {
+                "de": "Premium japanischer Matcha, serviert mit samtiger Milch.",
+                "en": "Premium Japanese Matcha served with silky milk.",
+                "es": "Matcha japonés premium, servido con leche sedosa."
+              },
+              "price": 4.9
+            }
+          ]
+        },
+        {
+          "id": "iced-drinks",
+          "title": {
+            "de": "Kalte Getränke",
+            "en": "Iced Drinks",
+            "es": "Bebidas Frías"
+          },
+          "description": {
+            "de": "Frag an der Bar nach unseren saisonalen Signature Drinks.",
+            "en": "Ask at the bar about our seasonal signature drinks.",
+            "es": "Pregunta en la barra por nuestras bebidas de temporada."
+          },
+          "items": [
+            {
+              "id": "iced-latte",
+              "name": {
+                "de": "Iced Latte",
+                "en": "Iced Latte",
+                "es": "Iced Latte"
+              },
+              "price": 4.9
+            },
+            {
+              "id": "iced-coco-latte",
+              "name": {
+                "de": "Iced Coco Latte",
+                "en": "Iced Coco Latte",
+                "es": "Iced Coco Latte"
+              },
+              "price": 5.5
+            },
+            {
+              "id": "iced-sultana",
+              "name": {
+                "de": "Iced Sultana",
+                "en": "Iced Sultana",
+                "es": "Iced Sultana"
+              },
+              "price": 4.5
+            },
+            {
+              "id": "iced-matcha-latte",
+              "name": {
+                "de": "Iced Matcha Latte",
+                "en": "Iced Matcha Latte",
+                "es": "Iced Matcha Latte"
+              },
+              "price": 6.5
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "dieSeeleBoliviens",
       "intro": {
         "de": "Jedes Rezept erzählt eine Geschichte. Inspiriert von Boliviens vielfältiger Küche werden unsere Produkte von Hand aus sorgfältig ausgewählten Zutaten und authentischen Rezepten hergestellt.",
@@ -201,242 +445,6 @@
       ]
     },
     {
-      "id": "carayaCoffee",
-      "intro": {
-        "de": "Unsere bolivianischen Kaffeebohnen werden direkt importiert und von Caraya Coffee selbst geröstet.",
-        "en": "Our Bolivian coffee beans are directly imported and roasted by Caraya Coffee.",
-        "es": "Nuestros granos de café boliviano se importan directamente y son tostados por Caraya Coffee."
-      },
-      "categories": [
-        {
-          "id": "coffee",
-          "title": {
-            "de": "Kaffee",
-            "en": "Coffee",
-            "es": "Café"
-          },
-          "items": [
-            {
-              "id": "espresso",
-              "name": { "de": "Espresso", "en": "Espresso", "es": "Espresso" },
-              "price": 3.0
-            },
-            {
-              "id": "espresso-double",
-              "name": {
-                "de": "Espresso Doppelt",
-                "en": "Espresso Double",
-                "es": "Espresso Doble"
-              },
-              "price": 3.9
-            },
-            {
-              "id": "americano",
-              "name": {
-                "de": "Americano",
-                "en": "Americano",
-                "es": "Americano"
-              },
-              "price": 3.9
-            },
-            {
-              "id": "cortado",
-              "name": { "de": "Cortado", "en": "Cortado", "es": "Cortado" },
-              "price": 3.9
-            },
-            {
-              "id": "cappuccino",
-              "name": {
-                "de": "Cappuccino",
-                "en": "Cappuccino",
-                "es": "Capuchino"
-              },
-              "price": 3.8
-            },
-            {
-              "id": "flat-white",
-              "name": {
-                "de": "Flat White",
-                "en": "Flat White",
-                "es": "Flat White"
-              },
-              "price": 4.8
-            },
-            {
-              "id": "batch-brew",
-              "name": {
-                "de": "Batch Brew",
-                "en": "Batch Brew",
-                "es": "Batch Brew"
-              },
-              "price": 3.6
-            },
-            {
-              "id": "hand-filter",
-              "name": {
-                "de": "Handfilter (290ml)",
-                "en": "Hand Filter (290ml)",
-                "es": "Filtro de Mano (290ml)"
-              },
-              "price": 5.8
-            }
-          ]
-        },
-        {
-          "id": "choose-bean",
-          "title": {
-            "de": "Wähle deine Bohne",
-            "en": "Choose Your Bean",
-            "es": "Elige tu Grano"
-          },
-          "description": {
-            "de": "Die direkte Zusammenarbeit mit den Kaffeeproduzent:innen erlaubt es uns, die unglaubliche Vielfalt des bolivianischen Kaffees zu zeigen – in großer Höhe angebaut, sorgfältig geerntet und geröstet, um den Charakter jeder Bohne hervorzuheben. Wähle deine Bohne an der Bar.",
-            "en": "Working directly with coffee producers lets us showcase the incredible diversity of Bolivian coffee — grown at high altitude, carefully harvested and roasted to highlight the character of every bean. Choose your bean at the bar.",
-            "es": "Trabajar directamente con los productores de café nos permite mostrar la increíble diversidad del café boliviano — cultivado en altura, cuidadosamente cosechado y tostado para resaltar el carácter de cada grano. Elige tu grano en la barra."
-          },
-          "items": [
-            {
-              "id": "catuai-blend",
-              "name": {
-                "de": "Catuaí-Blend, mittel-dunkel",
-                "en": "Medium Dark Catuai Blend",
-                "es": "Mezcla Catuaí, Tueste Medio-Oscuro"
-              },
-              "description": {
-                "de": "Wir arbeiten seit 2022 mit Asocafé Bolivia zusammen. Ihr Catuaí-Blend wird mittel-dunkel geröstet, um seine natürliche Süße zu betonen – Noten von Mandel, Milchschokolade und gelben Steinfrüchten. Als Espresso reicher und würziger, als Cappuccino cremig nach Mandel und Milchschokolade, als Americano honigartig süß mit Anklängen von Pflaume und Kirsche.",
-                "en": "We've been working with Asocafé Bolivia since 2022. Their Catuai Blend is roasted to a medium-dark profile that highlights its natural sweetness — notes of almond, milk chocolate and yellow stone fruit. Richer and spicier as an espresso; creamy almond and milk chocolate as a cappuccino; honey-like sweetness with hints of plum and cherry as an Americano.",
-                "es": "Trabajamos con Asocafé Bolivia desde 2022. Su mezcla Catuaí se tuesta a un perfil medio-oscuro que resalta su dulzura natural — notas de almendra, chocolate con leche y fruta de hueso amarilla. Como espresso, más intenso y especiado; como capuchino, cremoso con almendra y chocolate con leche; como americano, dulzura similar a la miel con toques de ciruela y cereza."
-              }
-            },
-            {
-              "id": "seasonal-light-roast",
-              "name": {
-                "de": "Saisonale Helle Röstung",
-                "en": "Seasonal Light Roast",
-                "es": "Tueste Claro de Temporada"
-              },
-              "description": {
-                "de": "Herausragende Partien von Kleinbauern und -bäuerinnen aus ganz Bolivien, hell geröstet, um die bemerkenswerte Vielfalt des Landes zu zeigen – lebendige Säure, blumige Aromen oder außergewöhnliche Süße. Einzellage, meist von Frauen produziert, immer Single Origin Bolivien. Wechselt alle sechs Wochen – frag uns nach dem aktuellen Saisonkaffee.",
-                "en": "Outstanding lots from smallholder farmers across Bolivia, roasted light to showcase the country's remarkable diversity — vibrant acidity, floral aromas or exceptional sweetness. Single finca, mostly women-produced, always single origin Bolivia. Changing every six weeks — ask us about today's seasonal coffee.",
-                "es": "Lotes excepcionales de pequeños productores de toda Bolivia, con tueste claro para mostrar la notable diversidad del país — acidez vibrante, aromas florales o dulzura excepcional. Finca única, mayormente producido por mujeres, siempre de origen único boliviano. Cambia cada seis semanas — pregúntanos por el café de temporada de hoy."
-              }
-            }
-          ]
-        },
-        {
-          "id": "tea-matcha",
-          "title": {
-            "de": "Tee & Matcha",
-            "en": "Tea & Matcha",
-            "es": "Té y Matcha"
-          },
-          "items": [
-            {
-              "id": "te-de-sultana",
-              "name": {
-                "de": "Té de Sultana",
-                "en": "Té de Sultana",
-                "es": "Té de Sultana"
-              },
-              "price": 3.8
-            },
-            {
-              "id": "seasonal-tea",
-              "name": {
-                "de": "Saisonaler Tee",
-                "en": "Seasonal Tea",
-                "es": "Té de Temporada"
-              },
-              "price": 3.8
-            },
-            {
-              "id": "kyoto-matcha-latte",
-              "name": {
-                "de": "Kyoto Matcha Latte",
-                "en": "Kyoto Matcha Latte",
-                "es": "Kyoto Matcha Latte"
-              },
-              "price": 4.9
-            },
-            {
-              "id": "chai-tea-latte",
-              "name": {
-                "de": "Chai Tea Latte",
-                "en": "Chai Tea Latte",
-                "es": "Chai Tea Latte"
-              },
-              "price": 4.8
-            },
-            {
-              "id": "kyoto-barista-matcha-latte",
-              "name": {
-                "de": "Kyoto Barista Matcha Latte",
-                "en": "Kyoto Barista Matcha Latte",
-                "es": "Kyoto Barista Matcha Latte"
-              },
-              "description": {
-                "de": "Premium japanischer Matcha, serviert mit samtiger Milch.",
-                "en": "Premium Japanese Matcha served with silky milk.",
-                "es": "Matcha japonés premium, servido con leche sedosa."
-              },
-              "price": 4.9
-            }
-          ]
-        },
-        {
-          "id": "iced-drinks",
-          "title": {
-            "de": "Kalte Getränke",
-            "en": "Iced Drinks",
-            "es": "Bebidas Frías"
-          },
-          "description": {
-            "de": "Frag an der Bar nach unseren saisonalen Signature Drinks.",
-            "en": "Ask at the bar about our seasonal signature drinks.",
-            "es": "Pregunta en la barra por nuestras bebidas de temporada."
-          },
-          "items": [
-            {
-              "id": "iced-latte",
-              "name": {
-                "de": "Iced Latte",
-                "en": "Iced Latte",
-                "es": "Iced Latte"
-              },
-              "price": 4.9
-            },
-            {
-              "id": "iced-coco-latte",
-              "name": {
-                "de": "Iced Coco Latte",
-                "en": "Iced Coco Latte",
-                "es": "Iced Coco Latte"
-              },
-              "price": 5.5
-            },
-            {
-              "id": "iced-sultana",
-              "name": {
-                "de": "Iced Sultana",
-                "en": "Iced Sultana",
-                "es": "Iced Sultana"
-              },
-              "price": 4.5
-            },
-            {
-              "id": "iced-matcha-latte",
-              "name": {
-                "de": "Iced Matcha Latte",
-                "en": "Iced Matcha Latte",
-                "es": "Iced Matcha Latte"
-              },
-              "price": 6.5
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "miskisimi",
       "intro": {
         "de": "Eingebettet in einige der höchstgelegenen Weinberge der Welt produziert Bolivien außergewöhnliche Weine, geprägt von den einzigartigen Bedingungen der Anden – angebaut auf Höhen zwischen 1.600 und 3.000 Metern über dem Meeresspiegel.",
@@ -475,7 +483,11 @@
             },
             {
               "id": "cuspide",
-              "name": { "de": "Cúspide", "en": "Cúspide", "es": "Cúspide" },
+              "name": {
+                "de": "Cúspide",
+                "en": "Cúspide",
+                "es": "Cúspide"
+              },
               "subtitle": {
                 "de": "Santo Patrono – Bodegas Kuhlmann – Caladoc & Malbec | Rotwein",
                 "en": "Santo Patrono – Bodegas Kuhlmann – Caladoc & Malbec | Red",
@@ -526,7 +538,11 @@
           "items": [
             {
               "id": "chuflay",
-              "name": { "de": "Chuflay", "en": "Chuflay", "es": "Chuflay" },
+              "name": {
+                "de": "Chuflay",
+                "en": "Chuflay",
+                "es": "Chuflay"
+              },
               "description": {
                 "de": "Boliviens Nationalcocktail – Singani, Ginger Ale und frischer Limette. Leicht, erfrischend und einfach zu trinken – die klassische Art, Boliviens ikonische Spirituose zu genießen.",
                 "en": "Bolivia's national cocktail — Singani, ginger ale and fresh lime. Light, refreshing and effortlessly drinkable, the classic way to enjoy Bolivia's iconic spirit.",

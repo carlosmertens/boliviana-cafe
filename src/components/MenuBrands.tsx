@@ -161,7 +161,7 @@ function MenuSectionBlock({ section }: { section: MenuSection }) {
   );
 }
 
-/** Menu page content: shared intro, then the full menu grouped by partner brand (food → coffee → wine), mirroring the About/Events page pattern. */
+/** Menu page content: shared intro, then the full menu grouped by partner brand (coffee → food → wine), mirroring the About/Events page pattern. */
 export function MenuBrands() {
   const t = useTranslations("menu");
 
