@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
-import { PlaceholderMain } from "@/components/PlaceholderMain";
+import { GalleryGrid } from "@/components/GalleryGrid";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -21,7 +21,7 @@ export default function GalleryPage() {
   return (
     <>
       <Header />
-      <PlaceholderMain namespace="gallery" />
+      <GalleryGrid />
     </>
   );
 }
