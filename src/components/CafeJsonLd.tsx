@@ -50,6 +50,7 @@ export function CafeJsonLd() {
     name: siteConfig.name,
     url: siteConfig.url,
     telephone: siteConfig.phone.href,
+    email: siteConfig.email,
     servesCuisine: "Bolivian",
     address: {
       "@type": "PostalAddress",
