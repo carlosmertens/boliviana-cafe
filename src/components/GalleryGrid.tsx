@@ -88,7 +88,7 @@ function GallerySectionBlock({ section }: { section: GallerySection }) {
   );
 }
 
-/** Gallery page content: shared intro, then curated Instagram photos grouped by partner brand (food → coffee → wine), mirroring the About/Menu/Contact page pattern. */
+/** Gallery page content: shared intro, then curated Instagram photos grouped by partner brand (coffee → food → wine), mirroring the About/Menu/Contact page pattern. */
 export function GalleryGrid() {
   const t = useTranslations("gallery");
 

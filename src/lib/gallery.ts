@@ -26,5 +26,5 @@ interface GalleryFile {
 
 const data = galleryData as GalleryFile;
 
-/** Curated gallery photos, food → coffee → wine — the same order as partnerBrands. */
+/** Curated gallery photos, coffee → food → wine — the same order as partnerBrands. */
 export const gallerySections: GallerySection[] = data.sections;

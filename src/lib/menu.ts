@@ -39,5 +39,5 @@ interface MenuFile {
 
 const data = menuData as MenuFile;
 
-/** Full café menu, food → coffee → wine — the same order as partnerBrands. */
+/** Full café menu, coffee → food → wine — the same order as partnerBrands. */
 export const menuSections: MenuSection[] = data.sections;

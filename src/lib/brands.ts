@@ -1,6 +1,7 @@
 /**
  * The three partner brands under Boliviana's roof, in the order they appear
- * on the About page (food → coffee → wine, mirroring the physical space).
+ * on the About, Menu, and Gallery pages (coffee → food → wine, matching the
+ * brochure's own ordering per stakeholder feedback, 2026-09-15).
  * Each keeps its own separate website and Instagram, even though Die Seele
  * Boliviens' Instagram now also doubles as the café's own umbrella account
  * (see project-scope.md's "Brand Accounts" section) — URLs confirmed
@@ -27,15 +28,6 @@ export interface PartnerBrand {
 
 export const partnerBrands: PartnerBrand[] = [
   {
-    id: "dieSeeleBoliviens",
-    color: "pink",
-    external: {
-      instagramHandle: "@die_seele_boliviens",
-      instagramUrl: "https://www.instagram.com/die_seele_boliviens",
-      websiteUrl: "https://dieseeleboliviens.com",
-    },
-  },
-  {
     id: "carayaCoffee",
     color: "navy",
     external: {
@@ -49,6 +41,15 @@ export const partnerBrands: PartnerBrand[] = [
         display: "0160 98538615",
         href: "+4916098538615",
       },
+    },
+  },
+  {
+    id: "dieSeeleBoliviens",
+    color: "pink",
+    external: {
+      instagramHandle: "@die_seele_boliviens",
+      instagramUrl: "https://www.instagram.com/die_seele_boliviens",
+      websiteUrl: "https://dieseeleboliviens.com",
     },
   },
   {
