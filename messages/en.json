@@ -55,7 +55,17 @@
   },
   "menu": {
     "title": "Menu",
-    "intro": "Salteñas, cuñapés, specialty coffee, and Bolivian wine — our full menu is coming soon."
+    "intro": "Salteñas, cuñapés, specialty coffee and Bolivian wine — one menu, three Bolivian brands. Everything is handmade fresh daily, so ask at the counter if something's sold out.",
+    "glass": "Glass",
+    "bottle": "Bottle",
+    "featured": "Signature pick",
+    "allergens": {
+      "egg": "Egg",
+      "gluten": "Gluten",
+      "milk": "Milk",
+      "nuts": "May contain nuts",
+      "vegan": "Vegan"
+    }
   },
   "gallery": {
     "title": "Gallery",

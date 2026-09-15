@@ -1,0 +1,557 @@
+{
+  "sections": [
+    {
+      "id": "dieSeeleBoliviens",
+      "intro": {
+        "de": "Jedes Rezept erzählt eine Geschichte. Inspiriert von Boliviens vielfältiger Küche werden unsere Produkte von Hand aus sorgfältig ausgewählten Zutaten und authentischen Rezepten hergestellt.",
+        "en": "Every recipe tells a story. Inspired by Bolivia's diverse culinary traditions, our products are handmade using carefully selected ingredients and authentic recipes.",
+        "es": "Cada receta cuenta una historia. Inspirados en las diversas tradiciones culinarias de Bolivia, nuestros productos son hechos a mano con ingredientes cuidadosamente seleccionados y recetas auténticas."
+      },
+      "categories": [
+        {
+          "id": "saltenas",
+          "title": {
+            "de": "Salteñas",
+            "en": "Salteñas",
+            "es": "Salteñas"
+          },
+          "description": {
+            "de": "Boliviens bekannteste Empanada – ein gebackenes Gebäck, gefüllt mit einem herzhaften, saftigen Eintopf, der Süße, Herzhaftigkeit und aromatische Gewürze perfekt ausbalanciert.",
+            "en": "Bolivia's most iconic empanada — a baked pastry filled with a rich, juicy stew that perfectly balances sweet, savory and aromatic spices.",
+            "es": "La empanada más icónica de Bolivia — un pastel horneado relleno de un guiso jugoso que equilibra perfectamente lo dulce, lo salado y las especias aromáticas."
+          },
+          "items": [
+            {
+              "id": "saltena-chicken",
+              "name": {
+                "de": "Hähnchen-Salteña",
+                "en": "Chicken Salteña",
+                "es": "Salteña de Pollo"
+              },
+              "description": {
+                "de": "Langsam gegartes Hähnchen mit Kartoffeln, Erbsen und traditionellen bolivianischen Gewürzen, eingehüllt in einen leicht süßen, goldenen Teig.",
+                "en": "Slow-cooked chicken with potatoes, peas and traditional Bolivian spices, wrapped in a slightly sweet golden pastry.",
+                "es": "Pollo cocido a fuego lento con papas, arvejas y especias bolivianas tradicionales, envuelto en una masa dorada ligeramente dulce."
+              },
+              "price": 6.5,
+              "allergens": ["egg", "gluten"]
+            },
+            {
+              "id": "saltena-beef",
+              "name": {
+                "de": "Rind-Salteña",
+                "en": "Beef Salteña",
+                "es": "Salteña de Res"
+              },
+              "description": {
+                "de": "Unser traditionellstes Rezept – zartes Rindfleisch, langsam gegart in einer aromatischen Brühe mit Gemüse und bolivianischen Gewürzen.",
+                "en": "Our most traditional recipe — tender beef slowly cooked in an aromatic broth with vegetables and Bolivian spices.",
+                "es": "Nuestra receta más tradicional: carne de res tierna cocida lentamente en un caldo aromático con verduras y especias bolivianas."
+              },
+              "price": 6.5,
+              "allergens": ["egg", "gluten"]
+            },
+            {
+              "id": "saltena-pork",
+              "name": {
+                "de": "Schweinefleisch-Salteña",
+                "en": "Pork Salteña",
+                "es": "Salteña de Cerdo"
+              },
+              "description": {
+                "de": "Langsam gegartes Schweinefleisch mit Gemüse und einer feinen Balance aus Süße und Gewürzen.",
+                "en": "Slow-cooked pork with vegetables and a delicate balance of sweetness and spices.",
+                "es": "Cerdo cocido a fuego lento con verduras y un delicado equilibrio entre dulzura y especias."
+              },
+              "price": 6.5,
+              "allergens": ["egg", "gluten"]
+            },
+            {
+              "id": "saltena-vegan",
+              "name": {
+                "de": "Vegane Salteña",
+                "en": "Vegan Salteña",
+                "es": "Salteña Vegana"
+              },
+              "description": {
+                "de": "Eine pflanzliche Version von Boliviens berühmtestem Gebäck, zubereitet mit Pilzen, Gemüse und ausgewählten Gewürzen.",
+                "en": "A plant-based version of Bolivia's most famous pastry, prepared with mushrooms, vegetables and selected spices.",
+                "es": "Una versión vegetal del pastel más famoso de Bolivia, preparada con champiñones, verduras y especias seleccionadas."
+              },
+              "price": 6.5,
+              "allergens": ["gluten", "vegan"]
+            }
+          ]
+        },
+        {
+          "id": "cunape",
+          "title": {
+            "de": "Cuñapé & Pucakapa",
+            "en": "Cuñapé & Pucakapa",
+            "es": "Cuñapé y Pucakapa"
+          },
+          "description": {
+            "de": "Traditionelles Käsebrot aus dem bolivianischen Tiefland, hergestellt aus Maniokstärke und ausgewählten Käsesorten.",
+            "en": "Traditional cheese bread from Eastern Bolivia, made with cassava starch and selected cheeses.",
+            "es": "Pan de queso tradicional del oriente boliviano, elaborado con almidón de yuca y quesos seleccionados."
+          },
+          "items": [
+            {
+              "id": "cunape-traditional",
+              "name": {
+                "de": "Traditionell",
+                "en": "Traditional",
+                "es": "Tradicional"
+              },
+              "description": {
+                "de": "Das klassische Rezept, das schon beim ersten Bissen überzeugt.",
+                "en": "The classic recipe that wins hearts at first bite.",
+                "es": "La receta clásica que conquista corazones desde el primer bocado."
+              },
+              "price": 2.2,
+              "allergens": ["milk", "egg"]
+            },
+            {
+              "id": "cunape-guava",
+              "name": {
+                "de": "Guave",
+                "en": "Guava",
+                "es": "Guayaba"
+              },
+              "description": {
+                "de": "Gefüllt mit hausgemachter Guavenpaste – eine Balance aus Süße und fruchtiger Säure.",
+                "en": "Filled with artisan guava paste, balancing sweetness and fruit acidity.",
+                "es": "Relleno de pasta artesanal de guayaba, equilibrando dulzura y acidez frutal."
+              },
+              "price": 3.5,
+              "allergens": ["milk", "egg"]
+            },
+            {
+              "id": "cunape-caramel",
+              "name": {
+                "de": "Karamell",
+                "en": "Caramel",
+                "es": "Caramelo"
+              },
+              "description": {
+                "de": "Gefüllt mit cremigem Dulce de Leche.",
+                "en": "Filled with creamy dulce de leche.",
+                "es": "Relleno de cremoso dulce de leche."
+              },
+              "price": 3.5,
+              "allergens": ["milk", "egg"]
+            },
+            {
+              "id": "pucakapa",
+              "name": {
+                "de": "Pucakapa",
+                "en": "Pucakapa",
+                "es": "Pucakapa"
+              },
+              "description": {
+                "de": "Ein traditionelles Gebäck aus Cochabamba, gefüllt mit ausgewählten Käsesorten, Zwiebeln, Pilzen und milden Gewürzen – cremig innen, goldbraun außen.",
+                "en": "A traditional baked pastry from Cochabamba filled with selected cheeses, onions, mushrooms and mild spices — creamy inside, golden outside.",
+                "es": "Un pastel tradicional de Cochabamba relleno de quesos seleccionados, cebolla, champiñones y especias suaves — cremoso por dentro, dorado por fuera."
+              },
+              "price": 5.9,
+              "allergens": ["milk", "egg", "gluten"]
+            }
+          ]
+        },
+        {
+          "id": "cakes",
+          "title": {
+            "de": "Hausgemachte Kuchen",
+            "en": "Artisan Cakes",
+            "es": "Bizcochos Artesanales"
+          },
+          "items": [
+            {
+              "id": "cake-banana",
+              "name": {
+                "de": "Bananenkuchen",
+                "en": "Banana Cake",
+                "es": "Bizcocho de Plátano"
+              },
+              "description": {
+                "de": "Saftiger Bananenkuchen mit Vanille und Zimt.",
+                "en": "Moist banana cake with vanilla and cinnamon.",
+                "es": "Húmedo bizcocho de plátano con vainilla y canela."
+              },
+              "price": 4.2,
+              "allergens": ["egg", "gluten", "milk", "nuts"]
+            },
+            {
+              "id": "cake-carrot-orange",
+              "name": {
+                "de": "Karotten-Orangen-Kuchen",
+                "en": "Carrot & Orange Cake",
+                "es": "Bizcocho de Zanahoria y Naranja"
+              },
+              "description": {
+                "de": "Frischer Karottenkuchen mit Orangenschale und warmen Gewürzen.",
+                "en": "Fresh carrot cake with orange zest and warm spices.",
+                "es": "Bizcocho de zanahoria fresco con ralladura de naranja y especias cálidas."
+              },
+              "price": 4.2,
+              "allergens": ["egg", "gluten", "nuts"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carayaCoffee",
+      "intro": {
+        "de": "Unsere bolivianischen Kaffeebohnen werden direkt importiert und von Caraya Coffee selbst geröstet.",
+        "en": "Our Bolivian coffee beans are directly imported and roasted by Caraya Coffee.",
+        "es": "Nuestros granos de café boliviano se importan directamente y son tostados por Caraya Coffee."
+      },
+      "categories": [
+        {
+          "id": "coffee",
+          "title": {
+            "de": "Kaffee",
+            "en": "Coffee",
+            "es": "Café"
+          },
+          "items": [
+            {
+              "id": "espresso",
+              "name": { "de": "Espresso", "en": "Espresso", "es": "Espresso" },
+              "price": 3.0
+            },
+            {
+              "id": "espresso-double",
+              "name": {
+                "de": "Espresso Doppelt",
+                "en": "Espresso Double",
+                "es": "Espresso Doble"
+              },
+              "price": 3.9
+            },
+            {
+              "id": "americano",
+              "name": {
+                "de": "Americano",
+                "en": "Americano",
+                "es": "Americano"
+              },
+              "price": 3.9
+            },
+            {
+              "id": "cortado",
+              "name": { "de": "Cortado", "en": "Cortado", "es": "Cortado" },
+              "price": 3.9
+            },
+            {
+              "id": "cappuccino",
+              "name": {
+                "de": "Cappuccino",
+                "en": "Cappuccino",
+                "es": "Capuchino"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "flat-white",
+              "name": {
+                "de": "Flat White",
+                "en": "Flat White",
+                "es": "Flat White"
+              },
+              "price": 4.8
+            },
+            {
+              "id": "batch-brew",
+              "name": {
+                "de": "Batch Brew",
+                "en": "Batch Brew",
+                "es": "Batch Brew"
+              },
+              "price": 3.6
+            },
+            {
+              "id": "hand-filter",
+              "name": {
+                "de": "Handfilter (290ml)",
+                "en": "Hand Filter (290ml)",
+                "es": "Filtro de Mano (290ml)"
+              },
+              "price": 5.8
+            }
+          ]
+        },
+        {
+          "id": "choose-bean",
+          "title": {
+            "de": "Wähle deine Bohne",
+            "en": "Choose Your Bean",
+            "es": "Elige tu Grano"
+          },
+          "description": {
+            "de": "Die direkte Zusammenarbeit mit den Kaffeeproduzent:innen erlaubt es uns, die unglaubliche Vielfalt des bolivianischen Kaffees zu zeigen – in großer Höhe angebaut, sorgfältig geerntet und geröstet, um den Charakter jeder Bohne hervorzuheben. Wähle deine Bohne an der Bar.",
+            "en": "Working directly with coffee producers lets us showcase the incredible diversity of Bolivian coffee — grown at high altitude, carefully harvested and roasted to highlight the character of every bean. Choose your bean at the bar.",
+            "es": "Trabajar directamente con los productores de café nos permite mostrar la increíble diversidad del café boliviano — cultivado en altura, cuidadosamente cosechado y tostado para resaltar el carácter de cada grano. Elige tu grano en la barra."
+          },
+          "items": [
+            {
+              "id": "catuai-blend",
+              "name": {
+                "de": "Catuaí-Blend, mittel-dunkel",
+                "en": "Medium Dark Catuai Blend",
+                "es": "Mezcla Catuaí, Tueste Medio-Oscuro"
+              },
+              "description": {
+                "de": "Wir arbeiten seit 2022 mit Asocafé Bolivia zusammen. Ihr Catuaí-Blend wird mittel-dunkel geröstet, um seine natürliche Süße zu betonen – Noten von Mandel, Milchschokolade und gelben Steinfrüchten. Als Espresso reicher und würziger, als Cappuccino cremig nach Mandel und Milchschokolade, als Americano honigartig süß mit Anklängen von Pflaume und Kirsche.",
+                "en": "We've been working with Asocafé Bolivia since 2022. Their Catuai Blend is roasted to a medium-dark profile that highlights its natural sweetness — notes of almond, milk chocolate and yellow stone fruit. Richer and spicier as an espresso; creamy almond and milk chocolate as a cappuccino; honey-like sweetness with hints of plum and cherry as an Americano.",
+                "es": "Trabajamos con Asocafé Bolivia desde 2022. Su mezcla Catuaí se tuesta a un perfil medio-oscuro que resalta su dulzura natural — notas de almendra, chocolate con leche y fruta de hueso amarilla. Como espresso, más intenso y especiado; como capuchino, cremoso con almendra y chocolate con leche; como americano, dulzura similar a la miel con toques de ciruela y cereza."
+              }
+            },
+            {
+              "id": "seasonal-light-roast",
+              "name": {
+                "de": "Saisonale Helle Röstung",
+                "en": "Seasonal Light Roast",
+                "es": "Tueste Claro de Temporada"
+              },
+              "description": {
+                "de": "Herausragende Partien von Kleinbauern und -bäuerinnen aus ganz Bolivien, hell geröstet, um die bemerkenswerte Vielfalt des Landes zu zeigen – lebendige Säure, blumige Aromen oder außergewöhnliche Süße. Einzellage, meist von Frauen produziert, immer Single Origin Bolivien. Wechselt alle sechs Wochen – frag uns nach dem aktuellen Saisonkaffee.",
+                "en": "Outstanding lots from smallholder farmers across Bolivia, roasted light to showcase the country's remarkable diversity — vibrant acidity, floral aromas or exceptional sweetness. Single finca, mostly women-produced, always single origin Bolivia. Changing every six weeks — ask us about today's seasonal coffee.",
+                "es": "Lotes excepcionales de pequeños productores de toda Bolivia, con tueste claro para mostrar la notable diversidad del país — acidez vibrante, aromas florales o dulzura excepcional. Finca única, mayormente producido por mujeres, siempre de origen único boliviano. Cambia cada seis semanas — pregúntanos por el café de temporada de hoy."
+              }
+            }
+          ]
+        },
+        {
+          "id": "tea-matcha",
+          "title": {
+            "de": "Tee & Matcha",
+            "en": "Tea & Matcha",
+            "es": "Té y Matcha"
+          },
+          "items": [
+            {
+              "id": "te-de-sultana",
+              "name": {
+                "de": "Té de Sultana",
+                "en": "Té de Sultana",
+                "es": "Té de Sultana"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "seasonal-tea",
+              "name": {
+                "de": "Saisonaler Tee",
+                "en": "Seasonal Tea",
+                "es": "Té de Temporada"
+              },
+              "price": 3.8
+            },
+            {
+              "id": "kyoto-matcha-latte",
+              "name": {
+                "de": "Kyoto Matcha Latte",
+                "en": "Kyoto Matcha Latte",
+                "es": "Kyoto Matcha Latte"
+              },
+              "price": 4.9
+            },
+            {
+              "id": "chai-tea-latte",
+              "name": {
+                "de": "Chai Tea Latte",
+                "en": "Chai Tea Latte",
+                "es": "Chai Tea Latte"
+              },
+              "price": 4.8
+            },
+            {
+              "id": "kyoto-barista-matcha-latte",
+              "name": {
+                "de": "Kyoto Barista Matcha Latte",
+                "en": "Kyoto Barista Matcha Latte",
+                "es": "Kyoto Barista Matcha Latte"
+              },
+              "description": {
+                "de": "Premium japanischer Matcha, serviert mit samtiger Milch.",
+                "en": "Premium Japanese Matcha served with silky milk.",
+                "es": "Matcha japonés premium, servido con leche sedosa."
+              },
+              "price": 4.9
+            }
+          ]
+        },
+        {
+          "id": "iced-drinks",
+          "title": {
+            "de": "Kalte Getränke",
+            "en": "Iced Drinks",
+            "es": "Bebidas Frías"
+          },
+          "description": {
+            "de": "Frag an der Bar nach unseren saisonalen Signature Drinks.",
+            "en": "Ask at the bar about our seasonal signature drinks.",
+            "es": "Pregunta en la barra por nuestras bebidas de temporada."
+          },
+          "items": [
+            {
+              "id": "iced-latte",
+              "name": {
+                "de": "Iced Latte",
+                "en": "Iced Latte",
+                "es": "Iced Latte"
+              },
+              "price": 4.9
+            },
+            {
+              "id": "iced-coco-latte",
+              "name": {
+                "de": "Iced Coco Latte",
+                "en": "Iced Coco Latte",
+                "es": "Iced Coco Latte"
+              },
+              "price": 5.5
+            },
+            {
+              "id": "iced-sultana",
+              "name": {
+                "de": "Iced Sultana",
+                "en": "Iced Sultana",
+                "es": "Iced Sultana"
+              },
+              "price": 4.5
+            },
+            {
+              "id": "iced-matcha-latte",
+              "name": {
+                "de": "Iced Matcha Latte",
+                "en": "Iced Matcha Latte",
+                "es": "Iced Matcha Latte"
+              },
+              "price": 6.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miskisimi",
+      "intro": {
+        "de": "Eingebettet in einige der höchstgelegenen Weinberge der Welt produziert Bolivien außergewöhnliche Weine, geprägt von den einzigartigen Bedingungen der Anden – angebaut auf Höhen zwischen 1.600 und 3.000 Metern über dem Meeresspiegel.",
+        "en": "Nestled among some of the world's highest vineyards, Bolivia produces exceptional wines shaped by the unique conditions of the Andes — grown at altitudes from 1,600 to 3,000 meters above sea level.",
+        "es": "Rodeada de algunos de los viñedos más altos del mundo, Bolivia produce vinos excepcionales moldeados por las condiciones únicas de los Andes — cultivados a altitudes de entre 1.600 y 3.000 metros sobre el nivel del mar."
+      },
+      "categories": [
+        {
+          "id": "red-wines",
+          "title": {
+            "de": "Rotweine",
+            "en": "Red Wines",
+            "es": "Vinos Tintos"
+          },
+          "items": [
+            {
+              "id": "tannat-nouveau",
+              "name": {
+                "de": "Tannat Nouveau – Lado B",
+                "en": "Tannat Nouveau – Lado B",
+                "es": "Tannat Nouveau – Lado B"
+              },
+              "subtitle": {
+                "de": "Jardín Oculto – Tannat | Rotwein",
+                "en": "Jardín Oculto – Tannat | Red",
+                "es": "Jardín Oculto – Tannat | Tinto"
+              },
+              "description": {
+                "de": "Ein lebendiger, fruchtbetonter Tannat, hergestellt mit Kohlensäuremaischung, voller frischer Kirsche, Walderdbeere, floraler Noten und einem seidigen, erfrischenden Abgang.",
+                "en": "A vibrant, fruit-forward Tannat crafted using carbonic maceration, bursting with fresh cherry, wild strawberry, floral notes and a silky, refreshing finish.",
+                "es": "Un Tannat vibrante y afrutado, elaborado con maceración carbónica, lleno de cereza fresca, fresa silvestre, notas florales y un final sedoso y refrescante."
+              },
+              "priceGlass": 10,
+              "priceBottle": 49,
+              "featured": true
+            },
+            {
+              "id": "cuspide",
+              "name": { "de": "Cúspide", "en": "Cúspide", "es": "Cúspide" },
+              "subtitle": {
+                "de": "Santo Patrono – Bodegas Kuhlmann – Caladoc & Malbec | Rotwein",
+                "en": "Santo Patrono – Bodegas Kuhlmann – Caladoc & Malbec | Red",
+                "es": "Santo Patrono – Bodegas Kuhlmann – Caladoc y Malbec | Tinto"
+              },
+              "description": {
+                "de": "Elegant, mit dunklen Früchten, feiner Würze und einem weichen, ausgewogenen Abgang.",
+                "en": "Elegant, offering dark fruit, subtle spice and a smooth, balanced finish.",
+                "es": "Elegante, con fruta oscura, especias sutiles y un final suave y equilibrado."
+              },
+              "priceGlass": 7.5,
+              "priceBottle": 35
+            },
+            {
+              "id": "altiplano",
+              "name": {
+                "de": "Altiplano",
+                "en": "Altiplano",
+                "es": "Altiplano"
+              },
+              "subtitle": {
+                "de": "Santo Patrono – Bodegas Kuhlmann – Marselan & Tannat | Rotwein",
+                "en": "Santo Patrono – Bodegas Kuhlmann – Marselan & Tannat | Red",
+                "es": "Santo Patrono – Bodegas Kuhlmann – Marselan y Tannat | Tinto"
+              },
+              "description": {
+                "de": "Harmonisch und reichhaltig, mit reifen dunklen Früchten, sanfter Würze und bemerkenswerter Frische.",
+                "en": "Harmonious and rich, with ripe black fruit, gentle spice and remarkable freshness.",
+                "es": "Armonioso y generoso, con fruta negra madura, especias suaves y una frescura notable."
+              },
+              "priceGlass": 7.5,
+              "priceBottle": 35
+            }
+          ]
+        },
+        {
+          "id": "singani-cocktails",
+          "title": {
+            "de": "Singani & Cocktails",
+            "en": "Singani & Cocktails",
+            "es": "Singani y Cócteles"
+          },
+          "description": {
+            "de": "Singani, Boliviens Nationalspirituose, wird ausschließlich aus aromatischen Muscat-of-Alexandria-Trauben destilliert, die in den Hochtälern Boliviens angebaut werden. Eine schonende Destillation bei niedriger Temperatur bewahrt die natürlichen blumigen und fruchtigen Aromen der Traube – bekannt für sein lebendiges Bouquet, seine außergewöhnliche Geschmeidigkeit und seinen eleganten Abgang. Geschützt durch eine Herkunftsbezeichnung, darf Singani ausschließlich in Bolivien hergestellt werden.",
+            "en": "Bolivia's national spirit, Singani is distilled exclusively from aromatic Muscat of Alexandria grapes grown in the high valleys of Bolivia. A gentle low-temperature distillation preserves the grape's natural floral and fruity aromas — renowned for its vibrant bouquet, exceptional smoothness and elegant finish. Protected by a designation of origin, Singani can only be produced in Bolivia.",
+            "es": "El Singani, espíritu nacional de Bolivia, se destila exclusivamente a partir de uvas aromáticas Moscatel de Alejandría cultivadas en los valles altos de Bolivia. Una destilación suave a baja temperatura preserva los aromas florales y afrutados naturales de la uva — reconocido por su bouquet vibrante, suavidad excepcional y final elegante. Protegido por una denominación de origen, el Singani solo puede producirse en Bolivia."
+          },
+          "items": [
+            {
+              "id": "chuflay",
+              "name": { "de": "Chuflay", "en": "Chuflay", "es": "Chuflay" },
+              "description": {
+                "de": "Boliviens Nationalcocktail – Singani, Ginger Ale und frischer Limette. Leicht, erfrischend und einfach zu trinken – die klassische Art, Boliviens ikonische Spirituose zu genießen.",
+                "en": "Bolivia's national cocktail — Singani, ginger ale and fresh lime. Light, refreshing and effortlessly drinkable, the classic way to enjoy Bolivia's iconic spirit.",
+                "es": "El cóctel nacional de Bolivia — Singani, ginger ale y limón fresco. Ligero, refrescante y fácil de beber, la forma clásica de disfrutar el espíritu icónico de Bolivia."
+              },
+              "price": 8,
+              "featured": true
+            },
+            {
+              "id": "iced-te-con-te",
+              "name": {
+                "de": "Iced Té con Té",
+                "en": "Iced Té con Té",
+                "es": "Iced Té con Té"
+              },
+              "description": {
+                "de": "Singani, Cascara-Tee, Zimt und Nelken – süß-würzig, kombiniert den blumigen Charakter des Singani mit Cascara (der getrockneten Schale der Kaffeekirsche) zu einem einzigartig bolivianischen Erlebnis. Auf Eis serviert.",
+                "en": "Singani, cascara tea, cinnamon and cloves — sweet and spicy, combining the floral character of Singani with cascara (the dried husk of the coffee fruit) for a uniquely Bolivian experience. Served on ice.",
+                "es": "Singani, té de cascara, canela y clavo — dulce y especiado, combina el carácter floral del Singani con la cascara (la cáscara seca del fruto del café) para una experiencia únicamente boliviana. Servido con hielo."
+              },
+              "price": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

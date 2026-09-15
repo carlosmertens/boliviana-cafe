@@ -55,7 +55,17 @@
   },
   "menu": {
     "title": "Menú",
-    "intro": "Salteñas, cuñapés, café de especialidad y vino boliviano — el menú completo llegará pronto."
+    "intro": "Salteñas, cuñapés, café de especialidad y vino boliviano — un solo menú, tres marcas bolivianas. Todo se hace a mano y fresco cada día, así que pregunta en el mostrador si algo está agotado.",
+    "glass": "Copa",
+    "bottle": "Botella",
+    "featured": "Recomendación de la casa",
+    "allergens": {
+      "egg": "Huevo",
+      "gluten": "Gluten",
+      "milk": "Leche",
+      "nuts": "Puede contener frutos secos",
+      "vegan": "Vegano"
+    }
   },
   "gallery": {
     "title": "Galería",

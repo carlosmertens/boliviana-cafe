@@ -55,7 +55,17 @@
   },
   "menu": {
     "title": "Speisekarte",
-    "intro": "Salteñas, Cuñapés, Spezialitätenkaffee und bolivianischer Wein – unsere vollständige Speisekarte folgt in Kürze."
+    "intro": "Salteñas, Cuñapés, Spezialitätenkaffee und bolivianischer Wein – eine Karte, drei bolivianische Marken. Alles wird täglich frisch von Hand gemacht, frag einfach an der Theke, falls etwas ausverkauft ist.",
+    "glass": "Glas",
+    "bottle": "Flasche",
+    "featured": "Empfehlung des Hauses",
+    "allergens": {
+      "egg": "Ei",
+      "gluten": "Gluten",
+      "milk": "Milch",
+      "nuts": "Kann Spuren von Nüssen enthalten",
+      "vegan": "Vegan"
+    }
   },
   "gallery": {
     "title": "Galerie",
