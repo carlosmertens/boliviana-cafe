@@ -14,6 +14,14 @@ export interface PartnerBrand {
     instagramHandle: string;
     instagramUrl: string;
     websiteUrl: string;
+    facebookUrl?: string;
+    /** Brand's own contact email, for brand-specific inquiries (Contact page). */
+    email?: string;
+    /** Brand's own contact phone, for brand-specific inquiries (Contact page) — omit when the brand's Impressum lists none. */
+    phone?: {
+      display: string;
+      href: string;
+    };
   };
 }
 
@@ -34,6 +42,13 @@ export const partnerBrands: PartnerBrand[] = [
       instagramHandle: "@caraya_coffee",
       instagramUrl: "https://www.instagram.com/caraya_coffee/",
       websiteUrl: "https://www.caraya-coffee.com/",
+      facebookUrl: "https://www.facebook.com/carayacoffee",
+      // Source: caraya-coffee.com/info/impressum.html, confirmed 2026-09-15.
+      email: "info@caraya-coffee.com",
+      phone: {
+        display: "0160 98538615",
+        href: "+4916098538615",
+      },
     },
   },
   {
@@ -43,6 +58,9 @@ export const partnerBrands: PartnerBrand[] = [
       instagramHandle: "@miskisimi_imports",
       instagramUrl: "https://www.instagram.com/miskisimi_imports/",
       websiteUrl: "https://miskisimi.com/",
+      facebookUrl: "https://www.facebook.com/people/MiskiSimi/100054278300331/",
+      // Source: miskisimi.com/policies/legal-notice, confirmed 2026-09-15 — no phone listed there.
+      email: "info@miskisimi.com",
     },
   },
 ];
