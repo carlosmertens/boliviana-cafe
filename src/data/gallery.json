@@ -1,0 +1,367 @@
+{
+  "sections": [
+    {
+      "id": "dieSeeleBoliviens",
+      "photos": [
+        {
+          "id": "die-seele-1",
+          "src": "/images/gallery/die-seele-1.jpg",
+          "width": 1086,
+          "height": 1060,
+          "instagramUrl": "https://www.instagram.com/p/Dcu6mHQNDNO/",
+          "alt": {
+            "de": "Frisch gebackene Cuñapés auf einem Schieferbrett",
+            "en": "Freshly baked cuñapés on a slate board",
+            "es": "Cuñapés recién horneados sobre una pizarra"
+          }
+        },
+        {
+          "id": "die-seele-2",
+          "src": "/images/gallery/die-seele-2.jpg",
+          "width": 896,
+          "height": 1366,
+          "instagramUrl": "https://www.instagram.com/p/DUz2LKljaiJ/",
+          "alt": {
+            "de": "Ein Biss in eine Salteña, daneben Cuñapés und eine Pucakapa",
+            "en": "Biting into a salteña, with cuñapés and a pucakapa alongside",
+            "es": "Un mordisco a una salteña, junto a cuñapés y una pucakapa"
+          }
+        },
+        {
+          "id": "die-seele-3",
+          "src": "/images/gallery/die-seele-3.jpg",
+          "width": 904,
+          "height": 900,
+          "instagramUrl": "https://www.instagram.com/p/DcjhnTkxwhK/",
+          "alt": {
+            "de": "Gäste sitzen draußen unter dem Neon-Schriftzug Boliviana",
+            "en": "Guests seated outside under the café's neon Boliviana sign",
+            "es": "Clientes sentados afuera bajo el letrero de neón de Boliviana"
+          }
+        },
+        {
+          "id": "die-seele-4",
+          "src": "/images/gallery/die-seele-4.jpg",
+          "width": 952,
+          "height": 1093,
+          "instagramUrl": "https://www.instagram.com/p/DcEU2-tMBQp/",
+          "alt": {
+            "de": "Das Gehwegschild des Cafés in der Winsstraße",
+            "en": "The café's sidewalk sign on Winsstraße",
+            "es": "El cartel de la acera del café en Winsstraße"
+          }
+        },
+        {
+          "id": "die-seele-5",
+          "src": "/images/gallery/die-seele-5.jpg",
+          "width": 1064,
+          "height": 1130,
+          "instagramUrl": "https://www.instagram.com/p/DUYO_e3jNV0/",
+          "alt": {
+            "de": "Eine aufgeschnittene vegane Salteña mit Kichererbsen- und Gemüsefüllung",
+            "en": "A vegan salteña sliced open, showing its chickpea and vegetable filling",
+            "es": "Una salteña vegana cortada, mostrando su relleno de garbanzos y verduras"
+          }
+        },
+        {
+          "id": "die-seele-6",
+          "src": "/images/gallery/die-seele-6.jpg",
+          "width": 786,
+          "height": 852,
+          "instagramUrl": "https://www.instagram.com/die_seele_boliviens/p/Dc4CyeyDAA5/",
+          "alt": {
+            "de": "Ein Wasserfall im bolivianischen Tiefland",
+            "en": "A waterfall in the Bolivian lowlands",
+            "es": "Una cascada en las tierras bajas bolivianas"
+          }
+        },
+        {
+          "id": "die-seele-7",
+          "src": "/images/gallery/die-seele-7.jpg",
+          "width": 786,
+          "height": 1330,
+          "instagramUrl": "https://www.instagram.com/die_seele_boliviens/reel/DCzLDWAtJiI/",
+          "alt": {
+            "de": "Zwei Frauen liefern frisch gepackte Salteña-Boxen aus",
+            "en": "Two women delivering freshly packed boxes of salteñas",
+            "es": "Dos mujeres entregando cajas recién empacadas de salteñas"
+          }
+        },
+        {
+          "id": "die-seele-8",
+          "src": "/images/gallery/die-seele-8.jpg",
+          "width": 786,
+          "height": 1330,
+          "instagramUrl": "https://www.instagram.com/die_seele_boliviens/reel/DRUTi_GjFX0/",
+          "alt": {
+            "de": "Boxen voller frisch gebackener Salteñas und Cuñapés in der Küche",
+            "en": "Boxes of freshly baked salteñas and cuñapés in the kitchen",
+            "es": "Cajas de salteñas y cuñapés recién horneados en la cocina"
+          }
+        },
+        {
+          "id": "die-seele-9",
+          "src": "/images/gallery/die-seele-9.jpg",
+          "width": 786,
+          "height": 1046,
+          "instagramUrl": "https://www.instagram.com/die_seele_boliviens/p/DUtEyVKjBgj/",
+          "alt": {
+            "de": "Eine Salteña vor dem Brandenburger Tor in Berlin",
+            "en": "A salteña held up in front of Berlin's Brandenburg Gate",
+            "es": "Una salteña frente a la Puerta de Brandeburgo en Berlín"
+          }
+        },
+        {
+          "id": "die-seele-10",
+          "src": "/images/gallery/die-seele-10.jpg",
+          "width": 786,
+          "height": 1330,
+          "instagramUrl": "https://www.instagram.com/die_seele_boliviens/reel/DUtfhw6jGke/",
+          "alt": {
+            "de": "Eine Kundin genießt eine Salteña im warmen Licht des Cafés",
+            "en": "A customer enjoying a salteña in the café's warm window light",
+            "es": "Una clienta disfrutando una salteña con la cálida luz del café"
+          }
+        }
+      ]
+    },
+    {
+      "id": "carayaCoffee",
+      "photos": [
+        {
+          "id": "caraya-1",
+          "src": "/images/gallery/caraya-1.jpg",
+          "width": 980,
+          "height": 979,
+          "instagramUrl": "https://www.instagram.com/p/DadtWzIMcyy/",
+          "alt": {
+            "de": "Latte-Art-Duo auf einem Aguayo-Textil",
+            "en": "Latte art duo on an aguayo textile",
+            "es": "Dúo de latte art sobre un textil aguayo"
+          }
+        },
+        {
+          "id": "caraya-2",
+          "src": "/images/gallery/caraya-2.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/Dbq4JzBDPTM/",
+          "alt": {
+            "de": "Jutesack von Caraya Coffee mit dem Logo der Rösterei",
+            "en": "Caraya Coffee's burlap sack, stamped with the roastery's logo",
+            "es": "Saco de yute de Caraya Coffee con el logotipo de la tostaduría"
+          }
+        },
+        {
+          "id": "caraya-3",
+          "src": "/images/gallery/caraya-3.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/DdCCfhygtP0/",
+          "alt": {
+            "de": "Eine einzelne geröstete Kaffeebohne",
+            "en": "A single roasted coffee bean",
+            "es": "Un solo grano de café tostado"
+          }
+        },
+        {
+          "id": "caraya-4",
+          "src": "/images/gallery/caraya-4.jpg",
+          "width": 980,
+          "height": 1186,
+          "instagramUrl": "https://www.instagram.com/p/Dc8zwucjFkZ/",
+          "alt": {
+            "de": "Caraya Coffees mobiler Kaffeewagen",
+            "en": "Caraya Coffee's mobile coffee cart",
+            "es": "El carrito móvil de café de Caraya Coffee"
+          }
+        },
+        {
+          "id": "caraya-5",
+          "src": "/images/gallery/caraya-5.jpg",
+          "width": 980,
+          "height": 1226,
+          "instagramUrl": "https://www.instagram.com/p/DcVLZt4DDrG/",
+          "alt": {
+            "de": "Eine Tasse Filterkaffee mit Herkunfts- und Geschmacksnotizen",
+            "en": "A cup of filter coffee with its origin tasting notes",
+            "es": "Una taza de café de filtro con sus notas de origen y cata"
+          }
+        },
+        {
+          "id": "caraya-6",
+          "src": "/images/gallery/caraya-6.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcfVxf-jHZk/",
+          "alt": {
+            "de": "Blick über die Kaffeefinca in den bolivianischen Yungas",
+            "en": "View over the coffee finca in the Bolivian Yungas",
+            "es": "Vista de la finca de café en los Yungas bolivianos"
+          }
+        },
+        {
+          "id": "caraya-7",
+          "src": "/images/gallery/caraya-7.jpg",
+          "width": 630,
+          "height": 768,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/DcJsmpSjH5j/",
+          "alt": {
+            "de": "Eine Pflückerin erntet reife Kaffeekirschen von Hand",
+            "en": "A picker hand-harvesting ripe coffee cherries",
+            "es": "Una recolectora cosechando a mano cerezas de café maduras"
+          }
+        },
+        {
+          "id": "caraya-8",
+          "src": "/images/gallery/caraya-8.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Db_lUkJDDqA/",
+          "alt": {
+            "de": "Eine Emaille-Tasse mit der Aufschrift 'Bolivian Specialty Coffee' auf einem Aguayo-Textil",
+            "en": "An enamel mug reading 'Bolivian Specialty Coffee' on an aguayo textile",
+            "es": "Una taza esmaltada con la leyenda 'Bolivian Specialty Coffee' sobre un textil aguayo"
+          }
+        },
+        {
+          "id": "caraya-9",
+          "src": "/images/gallery/caraya-9.jpg",
+          "width": 630,
+          "height": 752,
+          "instagramUrl": "https://www.instagram.com/caraya_coffee/p/Dc1gAaEjKzu/",
+          "alt": {
+            "de": "Der Bohnenbehälter des zweiten Mahlwerks, markiert mit 'Seasonal'",
+            "en": "The second grinder's bean hopper, labeled 'Seasonal'",
+            "es": "La tolva de granos del segundo molinillo, etiquetada 'Seasonal'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "miskisimi",
+      "photos": [
+        {
+          "id": "miskisimi-1",
+          "src": "/images/gallery/miskisimi-1.jpg",
+          "width": 982,
+          "height": 1204,
+          "instagramUrl": "https://www.instagram.com/p/DPqbiUViuY9/",
+          "alt": {
+            "de": "Beleuchtete Flaschen am Barregal bei der Singani Night",
+            "en": "Bottles lit along the bar shelf at Singani Night",
+            "es": "Botellas iluminadas en la barra durante la Singani Night"
+          }
+        },
+        {
+          "id": "miskisimi-2",
+          "src": "/images/gallery/miskisimi-2.jpg",
+          "width": 982,
+          "height": 1204,
+          "instagramUrl": "https://www.instagram.com/p/DPqbiUViuY9/",
+          "alt": {
+            "de": "Ein Barkeeper garniert einen Cocktail an der Bar",
+            "en": "A bartender garnishing a cocktail at the bar",
+            "es": "Un bartender decorando un cóctel en la barra"
+          }
+        },
+        {
+          "id": "miskisimi-3",
+          "src": "/images/gallery/miskisimi-3.jpg",
+          "width": 972,
+          "height": 736,
+          "instagramUrl": "https://www.instagram.com/p/DPqbiUViuY9/",
+          "alt": {
+            "de": "Ein Barkeeper vollendet drei Cocktails",
+            "en": "A bartender finishing three cocktails",
+            "es": "Un bartender terminando tres cócteles"
+          }
+        },
+        {
+          "id": "miskisimi-4",
+          "src": "/images/gallery/miskisimi-4.jpg",
+          "width": 982,
+          "height": 1204,
+          "instagramUrl": "https://www.instagram.com/p/DPqbiUViuY9/",
+          "alt": {
+            "de": "Ein Barkeeper schenkt aus einer Weinflasche ein",
+            "en": "A bartender pouring from a bottle of wine",
+            "es": "Un bartender sirviendo de una botella de vino"
+          }
+        },
+        {
+          "id": "miskisimi-5",
+          "src": "/images/gallery/miskisimi-5.jpg",
+          "width": 1076,
+          "height": 722,
+          "instagramUrl": "https://www.instagram.com/p/DZX1tvHoV6g/",
+          "alt": {
+            "de": "Die Winzer:innen von Jardín Oculto zwischen ihren jahrhundertealten Reben im Cinti-Tal",
+            "en": "Jardín Oculto's winemakers among their centuries-old vines in the Cinti Valley",
+            "es": "Los viticultores de Jardín Oculto entre sus vides centenarias en el Valle de Cinti"
+          }
+        },
+        {
+          "id": "miskisimi-6",
+          "src": "/images/gallery/miskisimi-6.jpg",
+          "width": 786,
+          "height": 1022,
+          "instagramUrl": "https://www.instagram.com/miskisimi_imports/p/DVdq0ibCiwH/",
+          "alt": {
+            "de": "Eine Erntekappe von 2025 liegt auf frisch gepflückten Trauben in roten Kisten",
+            "en": "A 2025 harvest cap resting on freshly picked grapes in red crates",
+            "es": "Una gorra de la vendimia 2025 sobre uvas recién cosechadas en cajas rojas"
+          }
+        },
+        {
+          "id": "miskisimi-7",
+          "src": "/images/gallery/miskisimi-7.jpg",
+          "width": 786,
+          "height": 1022,
+          "instagramUrl": "https://www.instagram.com/miskisimi_imports/p/DVdq0ibCiwH/",
+          "alt": {
+            "de": "Das Cinti-Tal mit seinen roten Bergen und einem Fluss",
+            "en": "The Cinti Valley, with its red mountains and a winding river",
+            "es": "El Valle de Cinti, con sus montañas rojas y un río serpenteante"
+          }
+        },
+        {
+          "id": "miskisimi-8",
+          "src": "/images/gallery/miskisimi-8.jpg",
+          "width": 786,
+          "height": 1022,
+          "instagramUrl": "https://www.instagram.com/miskisimi_imports/p/DVdq0ibCiwH/",
+          "alt": {
+            "de": "Der knorrige Stamm eines jahrhundertealten Weinstocks",
+            "en": "The gnarled trunk of a centuries-old vine",
+            "es": "El tronco retorcido de una vid centenaria"
+          }
+        },
+        {
+          "id": "miskisimi-9",
+          "src": "/images/gallery/miskisimi-9.jpg",
+          "width": 786,
+          "height": 1022,
+          "instagramUrl": "https://www.instagram.com/miskisimi_imports/p/DVdq0ibCiwH/",
+          "alt": {
+            "de": "Trauben hängen an einem alten Weinstock, ein Winzer im Hintergrund",
+            "en": "Grape clusters hanging from an old vine, a farmer in the background",
+            "es": "Racimos de uva colgando de una vid antigua, con un viticultor al fondo"
+          }
+        },
+        {
+          "id": "miskisimi-10",
+          "src": "/images/gallery/miskisimi-10.jpg",
+          "width": 786,
+          "height": 1022,
+          "instagramUrl": "https://www.instagram.com/miskisimi_imports/p/DVdq0ibCiwH/",
+          "alt": {
+            "de": "Ein voll behangener alter Weinstock im Spalier",
+            "en": "A full old vine heavy with grapes on the trellis",
+            "es": "Una vid antigua cargada de uvas en el espaldera"
+          }
+        }
+      ]
+    }
+  ]
+}
