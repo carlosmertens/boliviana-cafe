@@ -1,5 +1,6 @@
 import {
   MapPinIcon,
+  ClockIcon,
   PhoneIcon,
   EnvelopeIcon,
   StarIcon,
@@ -10,6 +11,7 @@ import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import { partnerBrands, type PartnerBrand } from "@/lib/brands";
 import { siteConfig } from "@/lib/site";
+import { OpeningHoursList } from "@/components/OpeningHoursAccordion";
 
 const brandById = Object.fromEntries(partnerBrands.map((b) => [b.id, b]));
 
@@ -55,6 +57,7 @@ function ContactRow({
 /** Primary "get in touch" card for the café itself (Boliviana, formerly Die Seele Boliviens — same transferred accounts). */
 function PrimaryContact() {
   const t = useTranslations("contact");
+  const tHours = useTranslations("hours");
   const whatsappHref = `https://wa.me/${siteConfig.phone.href.replace("+", "")}`;
 
   return (
@@ -69,6 +72,11 @@ function PrimaryContact() {
           {siteConfig.address.streetAddress}, {siteConfig.address.postalCode}{" "}
           {siteConfig.address.addressLocality}
         </a>
+      </ContactRow>
+
+      <ContactRow icon={ClockIcon}>
+        <p className="font-medium">{tHours("title")}</p>
+        <OpeningHoursList className="text-boliviana-navy/70 mt-1 space-y-0.5 text-sm" />
       </ContactRow>
 
       <ContactRow icon={PhoneIcon}>
