@@ -60,8 +60,12 @@ export const partnerBrands: PartnerBrand[] = [
       instagramUrl: "https://www.instagram.com/miskisimi_imports/",
       websiteUrl: "https://miskisimi.com/",
       facebookUrl: "https://www.facebook.com/people/MiskiSimi/100054278300331/",
-      // Source: miskisimi.com/policies/legal-notice, confirmed 2026-09-15 — no phone listed there.
       email: "info@miskisimi.com",
+      // Source: stakeholder feedback, confirmed 2026-09-16.
+      phone: {
+        display: "0156 78818266",
+        href: "+4915678818266",
+      },
     },
   },
 ];

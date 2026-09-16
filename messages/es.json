@@ -83,12 +83,13 @@
   },
   "contact": {
     "title": "Contacto",
-    "intro": "Winsstraße 17, 10405 Berlín — autoservicio, así que no se necesitan reservas, solo pasa. Para preguntas sobre una marca en particular, contacta directamente con ese equipo más abajo.",
+    "intro": "Ven a saludar — somos autoservicio, así que no hace falta reservar. Solo entra.",
     "call": "Llamar",
-    "brandsHeading": "Consultas por Marca",
-    "brandsIntro": "Las cuentas de Die Seele Boliviens son ahora las de Boliviana (ver arriba) — para preguntas sobre café o vino, contacta directamente a Caraya Coffee o Miskisimi."
+    "brandsHeading": "Descubre las marcas detrás de Boliviana",
+    "brandsIntro": "¿Quieres saber más sobre el café, el vino o el Singani que descubriste en Boliviana? Conoce a las personas y proyectos detrás de ellos."
   },
   "hours": {
+    "title": "Horario",
     "closed": "Cerrado",
     "openNow": "Abierto ahora",
     "closedNow": "Cerrado ahora"

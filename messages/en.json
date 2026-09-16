@@ -83,12 +83,13 @@
   },
   "contact": {
     "title": "Contact",
-    "intro": "Winsstraße 17, 10405 Berlin — self-service, so no reservations needed, just walk in. For a specific brand's products, reach out to that team directly below.",
+    "intro": "Come say hi — we're self-service, so no reservations are needed. Just walk in.",
     "call": "Call",
-    "brandsHeading": "Brand-Specific Inquiries",
-    "brandsIntro": "Die Seele Boliviens' own accounts are Boliviana's own (see above) — for coffee or wine questions, reach out to Caraya Coffee or Miskisimi directly."
+    "brandsHeading": "Discover the brands behind Boliviana",
+    "brandsIntro": "Want to know more about the coffee, wine or Singani you discovered at Boliviana? Meet the people and projects behind them."
   },
   "hours": {
+    "title": "Opening hours",
     "closed": "Closed",
     "openNow": "Open now",
     "closedNow": "Closed now"

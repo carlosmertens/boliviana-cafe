@@ -83,12 +83,13 @@
   },
   "contact": {
     "title": "Kontakt",
-    "intro": "Winsstraße 17, 10405 Berlin – Selbstbedienung, also keine Reservierung nötig, einfach vorbeikommen. Für Fragen zu einer bestimmten Marke wende dich unten direkt an das jeweilige Team.",
+    "intro": "Komm vorbei und sag Hallo – wir sind Selbstbedienung, also brauchst du keine Reservierung. Einfach reinkommen.",
     "call": "Anrufen",
-    "brandsHeading": "Anfragen zu einzelnen Marken",
-    "brandsIntro": "Die Konten von Die Seele Boliviens sind jetzt die von Boliviana selbst (siehe oben) – bei Fragen zu Kaffee oder Wein wende dich direkt an Caraya Coffee oder Miskisimi."
+    "brandsHeading": "Entdecke die Marken hinter Boliviana",
+    "brandsIntro": "Möchtest du mehr über den Kaffee, Wein oder Singani erfahren, den du bei Boliviana entdeckt hast? Lerne die Menschen und Projekte dahinter kennen."
   },
   "hours": {
+    "title": "Öffnungszeiten",
     "closed": "Geschlossen",
     "openNow": "Jetzt geöffnet",
     "closedNow": "Jetzt geschlossen"

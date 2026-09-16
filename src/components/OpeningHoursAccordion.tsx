@@ -33,13 +33,47 @@ function weekdayName(
   return format.dateTime(date, { weekday: style, timeZone: "UTC" });
 }
 
+/** Static weekly schedule, grouped into ranges — the content shown inside the accordion, reused as-is on the Contact page. */
+export function OpeningHoursList({
+  className = "space-y-1",
+}: {
+  className?: string;
+}) {
+  const t = useTranslations("hours");
+  const format = useFormatter();
+
+  return (
+    <div className={className}>
+      {groupedHours().map((group) => {
+        const first = weekdayName(format, group.days[0], "short");
+        const last = weekdayName(
+          format,
+          group.days[group.days.length - 1],
+          "short",
+        );
+        const label = group.days.length > 1 ? `${first}–${last}` : first;
+
+        return (
+          <div key={group.days.join(",")} className="flex gap-4">
+            <span className="w-16 shrink-0">{label}</span>
+            <span>
+              {group.open && group.close
+                ? `${group.open}–${group.close}`
+                : t("closed")}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 /**
  * Compact "open now / closed now" status that expands to the full weekly
  * schedule (grouped into ranges, e.g. Mon–Tue closed, Wed–Sun 10:00–18:00).
  */
 export function OpeningHoursAccordion() {
   const t = useTranslations("hours");
-  const format = useFormatter();
   const isOpen = isOpenNow();
 
   return (
@@ -67,29 +101,9 @@ export function OpeningHoursAccordion() {
             <DisclosurePanel
               static
               aria-hidden={!isExpanded}
-              className={`text-boliviana-cream/70 mt-2 min-h-0 space-y-1 overflow-hidden transition-opacity duration-150 ${isExpanded ? "opacity-100" : "opacity-0"}`}
+              className={`text-boliviana-cream/70 mt-2 min-h-0 overflow-hidden transition-opacity duration-150 ${isExpanded ? "opacity-100" : "opacity-0"}`}
             >
-              {groupedHours().map((group) => {
-                const first = weekdayName(format, group.days[0], "short");
-                const last = weekdayName(
-                  format,
-                  group.days[group.days.length - 1],
-                  "short",
-                );
-                const label =
-                  group.days.length > 1 ? `${first}–${last}` : first;
-
-                return (
-                  <div key={group.days.join(",")} className="flex gap-4">
-                    <span className="w-16 shrink-0">{label}</span>
-                    <span>
-                      {group.open && group.close
-                        ? `${group.open}–${group.close}`
-                        : t("closed")}
-                    </span>
-                  </div>
-                );
-              })}
+              <OpeningHoursList />
             </DisclosurePanel>
           </div>
         </>
