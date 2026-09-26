@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useSyncExternalStore } from "react";
-import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Megaphone, X } from "lucide-react";
 import { useFormatter, useLocale, useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 import type { Locale } from "@/i18n/routing";
 import { getActiveAnnouncement, isAnnouncementEvent } from "@/lib/announcement";
 
@@ -76,7 +77,7 @@ export function AnnouncementBanner() {
   return (
     <div className="bg-boliviana-yellow">
       <div className="mx-auto flex max-w-7xl items-start gap-3 px-6 py-3 sm:px-10">
-        <MegaphoneIcon
+        <Megaphone
           aria-hidden="true"
           className="text-boliviana-navy mt-0.5 size-5 shrink-0"
         />
@@ -90,14 +91,16 @@ export function AnnouncementBanner() {
           <p className="text-boliviana-navy text-sm font-semibold">{detail}</p>
         </div>
         {dismissible && (
-          <button
+          <Button
             type="button"
+            variant="ghost"
+            size="icon"
             onClick={handleDismiss}
-            className="text-boliviana-navy/70 hover:bg-boliviana-navy/10 hover:text-boliviana-navy focus-visible:outline-boliviana-purple rounded-control -m-1.5 shrink-0 self-center p-1.5 focus-visible:outline-2"
+            className="text-boliviana-navy/70 hover:bg-boliviana-navy/10 hover:text-boliviana-navy focus-visible:ring-boliviana-purple/50 -m-1.5 shrink-0 self-center"
           >
             <span className="sr-only">{t("dismiss")}</span>
-            <XMarkIcon aria-hidden="true" className="size-5" />
-          </button>
+            <X aria-hidden="true" className="size-5" />
+          </Button>
         )}
       </div>
     </div>

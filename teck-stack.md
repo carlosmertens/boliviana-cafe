@@ -26,6 +26,23 @@ Given the existing Vercel/Next.js familiarity and the likely need for some backe
 - Already have a paid Tailwind Plus subscription — access to prebuilt components/templates speeds up building out pages.
 - Pairs natively with Next.js, no extra setup friction.
 
+## UI Components: shadcn/ui (migrated from Headless UI + Heroicons)
+
+**Decision:** shadcn/ui (`base-nova` style, Base UI primitives underneath — not Radix) for interactive components (select, collapsible, button), `lucide-react` for icons. Replaces the project's original Headless UI + Heroicons pairing.
+
+**Reasoning:**
+
+- Headless UI + Heroicons was the initial choice mainly by default (paired naturally with the Tailwind Plus subscription); shadcn/ui's copy-into-repo model (components land in `src/components/ui/`, fully owned/editable) fits this project's existing pattern of hand-styling everything against the `boliviana-*` design tokens rather than consuming a component library as a black box.
+- Base UI (not Radix) because that's what `shadcn init` set up by default for this project at migration time — functionally equivalent for this project's needs (accessible primitives, data-attribute-driven state).
+- lucide-react has a much larger icon set than Heroicons, useful as the site grows past the current icon usage (Star/Sun/Moon for the three partner brands, Map Pin/Clock/Phone/Mail for contact, Menu/X for mobile nav, etc.).
+
+**Migration notes (for anyone touching UI components after this point):**
+
+- `Listbox` → `Select`, `Disclosure` → `Collapsible`. Both Base UI components drive state via `data-*` attributes (`data-selected`, `data-highlighted`, `data-panel-open`, etc.) rather than Headless UI's render-prop (`{({ open }) => ...}`) pattern — see `Header.tsx`'s mobile nav (`group-data-panel-open:` on the trigger's icon children) and `OpeningHoursAccordion.tsx` (relies on `CollapsiblePanel`'s built-in `--collapsible-panel-height` animation instead of the old manual `grid-template-rows` trick).
+- Only `data-open`, `data-closed`, `data-checked`, `data-unchecked`, `data-selected`, `data-disabled`, `data-active`, `data-horizontal`, `data-vertical` have a `@custom-variant` defined (in `node_modules/shadcn/dist/tailwind.css`, imported via `globals.css`) — usable as plain Tailwind variants (`data-selected:...`). Anything else (e.g. `data-highlighted`) needs the bracket form (`data-[highlighted]:...`) or it silently compiles to nothing.
+- **`shadcn init` overwrote `globals.css`'s `--font-sans` with a self-referencing `--font-sans: var(--font-sans)`** inside its generated `@theme inline` block, which is invalid CSS (a custom property can't reference itself) and silently broke the site's actual custom property (`--font-sans: var(--font-jost)`, declared earlier in the same file) — every `font-sans` usage site-wide fell back to the browser default sans-serif instead of Jost. Caught via visual diff against production. Fixed by deleting the generated `--font-heading`/`--font-sans` lines (neither is used anywhere in this codebase). **If `shadcn add` or `shadcn init` is ever re-run**, check `globals.css` for this regenerating itself and re-delete it.
+- `pnpm remove @headlessui/react @heroicons/react` once no source file referenced them (`grep -rn "@headlessui/react\|@heroicons/react" src/`).
+
 ## Package Manager: pnpm
 
 **Decision:** pnpm.
