@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { LanguageIcon } from "@heroicons/react/20/solid";
+import { Languages } from "lucide-react";
 import { routing } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { SelectMenu } from "@/components/ui/SelectMenu";
@@ -26,7 +26,7 @@ export function LocaleSwitcher() {
     <SelectMenu
       label="Language"
       hideLabel
-      icon={<LanguageIcon className="size-4" />}
+      icon={<Languages className="size-4" />}
       className="min-w-32"
       options={localeOptions}
       value={locale}

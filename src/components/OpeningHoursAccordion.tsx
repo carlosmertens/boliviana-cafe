@@ -1,12 +1,12 @@
 "use client";
 
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { ChevronUpDownIcon } from "@heroicons/react/16/solid";
+import { ChevronsUpDown } from "lucide-react";
 import { useFormatter, useTranslations } from "next-intl";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import { groupedHours, isOpenNow } from "@/lib/hours";
 
 // Offset in days from a known Monday (2024-01-01), used to derive localized
@@ -77,37 +77,22 @@ export function OpeningHoursAccordion() {
   const isOpen = isOpenNow();
 
   return (
-    <Disclosure as="div">
-      {({ open: isExpanded }) => (
-        <>
-          <DisclosureButton className="group rounded-control flex items-center gap-2 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white">
-            <span
-              aria-hidden="true"
-              className={`size-2 rounded-full ${isOpen ? "bg-boliviana-yellow" : "bg-boliviana-cream/30"}`}
-            />
-            <span>{isOpen ? t("openNow") : t("closedNow")}</span>
-            <ChevronUpDownIcon
-              aria-hidden="true"
-              className="text-boliviana-cream/60 size-4"
-            />
-          </DisclosureButton>
+    <Collapsible>
+      <CollapsibleTrigger className="group rounded-control flex items-center gap-2 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white">
+        <span
+          aria-hidden="true"
+          className={`size-2 rounded-full ${isOpen ? "bg-boliviana-yellow" : "bg-boliviana-cream/30"}`}
+        />
+        <span>{isOpen ? t("openNow") : t("closedNow")}</span>
+        <ChevronsUpDown
+          aria-hidden="true"
+          className="text-boliviana-cream/60 size-4"
+        />
+      </CollapsibleTrigger>
 
-          {/* Animating grid-template-rows (rather than height) lets this
-              expand/collapse smoothly without knowing the content's height
-              up front — plain height transitions can't animate to "auto". */}
-          <div
-            className={`grid transition-[grid-template-rows] duration-200 ease-out ${isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
-          >
-            <DisclosurePanel
-              static
-              aria-hidden={!isExpanded}
-              className={`text-boliviana-cream/70 mt-2 min-h-0 overflow-hidden transition-opacity duration-150 ${isExpanded ? "opacity-100" : "opacity-0"}`}
-            >
-              <OpeningHoursList />
-            </DisclosurePanel>
-          </div>
-        </>
-      )}
-    </Disclosure>
+      <CollapsibleContent className="text-boliviana-cream/70 mt-2 h-[var(--collapsible-panel-height)] overflow-hidden transition-[height] duration-200 ease-out data-[ending-style]:h-0 data-[starting-style]:h-0">
+        <OpeningHoursList />
+      </CollapsibleContent>
+    </Collapsible>
   );
 }

@@ -1,4 +1,4 @@
-import { StarIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { Star, Sun, Moon } from "lucide-react";
 import { useFormatter, useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { partnerBrands } from "@/lib/brands";
@@ -11,9 +11,9 @@ import {
 } from "@/lib/menu";
 
 const icons = {
-  dieSeeleBoliviens: StarIcon,
-  carayaCoffee: SunIcon,
-  miskisimi: MoonIcon,
+  dieSeeleBoliviens: Star,
+  carayaCoffee: Sun,
+  miskisimi: Moon,
 } as const;
 
 const iconColors = {

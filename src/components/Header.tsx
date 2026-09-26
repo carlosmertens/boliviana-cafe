@@ -1,12 +1,12 @@
 "use client";
 
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 
@@ -18,10 +18,10 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <Disclosure
-      as="nav"
+    <Collapsible
       aria-label={tCommon("mainNavigation")}
       className="bg-boliviana-cream relative"
+      render={<nav />}
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <div className="flex h-16 justify-between">
@@ -61,31 +61,30 @@ export function Header() {
           </div>
 
           <div className="-mr-2 flex items-center sm:hidden">
-            <DisclosureButton className="group text-boliviana-navy/70 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-pink rounded-control relative inline-flex items-center justify-center p-2 focus:outline-2 focus:-outline-offset-1">
+            <CollapsibleTrigger className="group text-boliviana-navy/70 hover:bg-boliviana-navy/5 hover:text-boliviana-navy focus:outline-boliviana-pink rounded-control relative inline-flex items-center justify-center p-2 focus:outline-2 focus:-outline-offset-1">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">{tCommon("openMenu")}</span>
-              <Bars3Icon
+              <Menu
                 aria-hidden="true"
-                className="block size-6 group-data-open:hidden"
+                className="block size-6 group-data-panel-open:hidden"
               />
-              <XMarkIcon
+              <X
                 aria-hidden="true"
-                className="hidden size-6 group-data-open:block"
+                className="hidden size-6 group-data-panel-open:block"
               />
-            </DisclosureButton>
+            </CollapsibleTrigger>
           </div>
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <CollapsibleContent className="h-[var(--collapsible-panel-height)] overflow-hidden transition-[height] duration-200 ease-out data-[ending-style]:h-0 data-[starting-style]:h-0 sm:hidden">
         <div className="space-y-1 pt-2 pb-3">
           {navItems.map((item) => {
             const href = `/${item}`;
             const isActive = pathname === href;
             return (
-              <DisclosureButton
+              <Link
                 key={item}
-                as={Link}
                 href={href}
                 aria-current={isActive ? "page" : undefined}
                 className={
@@ -95,14 +94,14 @@ export function Header() {
                 }
               >
                 {t(item)}
-              </DisclosureButton>
+              </Link>
             );
           })}
         </div>
         <div className="border-boliviana-navy/10 border-t px-4 py-4">
           <LocaleSwitcher />
         </div>
-      </DisclosurePanel>
-    </Disclosure>
+      </CollapsibleContent>
+    </Collapsible>
   );
 }

@@ -1,12 +1,4 @@
-import {
-  MapPinIcon,
-  ClockIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-  StarIcon,
-  SunIcon,
-  MoonIcon,
-} from "@heroicons/react/24/outline";
+import { MapPin, Clock, Phone, Mail, Star, Sun, Moon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import { partnerBrands, type PartnerBrand } from "@/lib/brands";
@@ -16,9 +8,9 @@ import { OpeningHoursList } from "@/components/OpeningHoursAccordion";
 const brandById = Object.fromEntries(partnerBrands.map((b) => [b.id, b]));
 
 const icons = {
-  dieSeeleBoliviens: StarIcon,
-  carayaCoffee: SunIcon,
-  miskisimi: MoonIcon,
+  dieSeeleBoliviens: Star,
+  carayaCoffee: Sun,
+  miskisimi: Moon,
 } as const;
 
 const iconColors = {
@@ -40,7 +32,7 @@ function ContactRow({
   icon: Icon,
   children,
 }: {
-  icon: typeof MapPinIcon;
+  icon: typeof MapPin;
   children: ReactNode;
 }) {
   return (
@@ -62,7 +54,7 @@ function PrimaryContact() {
 
   return (
     <div className="flex w-full max-w-xl flex-col gap-4">
-      <ContactRow icon={MapPinIcon}>
+      <ContactRow icon={MapPin}>
         <a
           href={siteConfig.mapsUrl}
           target="_blank"
@@ -74,12 +66,12 @@ function PrimaryContact() {
         </a>
       </ContactRow>
 
-      <ContactRow icon={ClockIcon}>
+      <ContactRow icon={Clock}>
         <p className="font-medium">{tHours("title")}</p>
         <OpeningHoursList className="text-boliviana-navy/70 mt-1 space-y-0.5 text-sm" />
       </ContactRow>
 
-      <ContactRow icon={PhoneIcon}>
+      <ContactRow icon={Phone}>
         <a href={`tel:${siteConfig.phone.href}`} className={linkClass}>
           {t("call")}
         </a>
@@ -97,7 +89,7 @@ function PrimaryContact() {
         </p>
       </ContactRow>
 
-      <ContactRow icon={EnvelopeIcon}>
+      <ContactRow icon={Mail}>
         <a href={`mailto:${siteConfig.email}`} className={linkClass}>
           {siteConfig.email}
         </a>

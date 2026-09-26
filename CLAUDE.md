@@ -35,7 +35,7 @@ There is no test suite configured yet. When verifying UI changes, run `pnpm buil
 
 ## Architecture
 
-**Stack:** Next.js 16 (App Router) + TypeScript + Tailwind CSS v4, next-intl for i18n, Headless UI + Heroicons for interactive components. Deployed on Vercel.
+**Stack:** Next.js 16 (App Router) + TypeScript + Tailwind CSS v4, next-intl for i18n, shadcn/ui (Base UI primitives) + lucide-react for interactive components. Deployed on Vercel.
 
 ### Next.js 16 caveat
 
@@ -56,11 +56,15 @@ Brand colors/fonts/radius are Tailwind v4 `@theme` tokens (`--color-boliviana-*`
 
 **Non-home page background:** every page except the homepage (`/`, which keeps its own bold `bg-boliviana-pink` hero) uses a shared "curvy swoop" convention on its `<main>`: `rounded-t-[3rem] sm:rounded-t-[4rem]` plus the `.hero-tint` utility class (`globals.css`) — two layered diagonal gradients (navy top-left → pink bottom-right, and pink top-right → navy bottom-left), each faded to transparent at its own midpoint rather than mixed into opaque cream. Layering them this way (as separate `background-image` gradients over a `background-color: cream` base) gives all four corners their own tint with a clear, untinted cream cross through the middle — mixing the two into opaque colors and averaging them mathematically instead would just collapse into a single left-to-right blend, which isn't what was wanted. Spans the element's full percentage-based width/height (not a fixed-height band), so it always reaches edge-to-edge regardless of page length. A soft `shadow-[0_12px_30px_-18px_rgba(28,21,82,0.3)]` on the same element is what actually makes the rounded top corner visible against the header above it — the gradient alone is too subtle at that boundary to read as a curve. See `PlaceholderMain.tsx` (Menu/Gallery/Contact), `EventsList.tsx`, and `AboutBrands.tsx` for usage.
 
-**Project rule:** every interactive element's keyboard-focus ring uses `focus-visible:outline-boliviana-pink`, everywhere — this is documented in a comment in `globals.css`. Exception: `SelectMenu`'s internal option-hover/selected highlight uses purple instead of pink (contrast reasons against pink backgrounds), the footer's focus rings use white (pink fails contrast against the footer's purple/navy background), and `AnnouncementBanner`'s dismiss button uses purple (pink-on-yellow only measures ~3.3:1 against WCAG's 3:1 non-text minimum, purple measures ~7.3:1). Any new interactive component should default to the pink rule unless there's a documented contrast reason not to — check contrast against the actual background before deviating.
+**Project rule:** every interactive element's keyboard-focus ring uses `focus-visible:outline-boliviana-pink`, everywhere — this is documented in a comment in `globals.css`. Exception: the footer's focus rings use white (pink fails contrast against the footer's purple/navy background), and `AnnouncementBanner`'s dismiss button uses purple (pink-on-yellow only measures ~3.3:1 against WCAG's 3:1 non-text minimum, purple measures ~7.3:1). Any new interactive component should default to the pink rule unless there's a documented contrast reason not to — check contrast against the actual background before deviating.
 
 ### Reusable UI (`src/components/ui/`)
 
-`SelectMenu.tsx` is a generic Headless UI Listbox wrapper (used by `LocaleSwitcher` and meant for other dropdown needs) — supports an optional per-option `avatar` image and a generic leading `icon`. Extend this component for new dropdowns rather than building one-off listboxes.
+This is a mix of shadcn/ui-generated primitives and hand-built wrappers around them — don't assume every file here was scaffolded by `shadcn add`, and don't re-run `shadcn add` on a file that's since been customized (it'll overwrite the customization).
+
+- `button.tsx`, `select.tsx`, `collapsible.tsx` — shadcn/ui primitives (Base UI underneath, not Radix — this project's `components.json` uses the `base-nova` style). Generated via `pnpm dlx shadcn@latest add <name>`; keep them close to stock so future `shadcn add`/upgrades stay easy to apply. Extend via wrapper components (see below) rather than editing brand-specific styling directly into these files.
+- `SelectMenu.tsx` is a hand-built wrapper around the shadcn `Select` (used by `LocaleSwitcher` and meant for other dropdown needs) — supports an optional per-option `avatar` image and a generic leading `icon`, and applies the project's pink hover/selected tint (`data-[highlighted]:bg-boliviana-pink/10 data-selected:bg-boliviana-pink/10` — note `data-highlighted` needs the bracket form since only `data-selected` etc. have a `@custom-variant` defined in `shadcn/tailwind.css`; unbracketed `data-highlighted:` silently compiles to nothing). Extend this component for new dropdowns rather than building one-off selects or restyling `select.tsx` directly.
+- Icons are `lucide-react` throughout (not Heroicons) — match existing icon choices (e.g. `Star`/`Sun`/`Moon` for the three partner brands) when adding new ones rather than mixing icon sets.
 
 ### SEO/structured data
 
