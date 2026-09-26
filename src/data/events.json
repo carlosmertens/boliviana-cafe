@@ -40,6 +40,42 @@
         "es": "Ver fotos en Google"
       },
       "registrationRequired": false
+    },
+    {
+      "id": "barista-course-2026-10-18",
+      "date": "2026-10-18",
+      "startTime": "10:00",
+      "endTime": "13:00",
+      "title": {
+        "de": "Barista-Kurs",
+        "en": "Barista Course",
+        "es": "Curso de Barista"
+      },
+      "description": {
+        "de": "Einsteiger-Workshop (Level 0–1) – Espresso-Grundlagen, Milchaufschäumen und Maschinenpflege in kleinen Gruppen von 4–6 Personen, direkt hier bei Boliviana.",
+        "en": "Level 0–1 beginner workshop — espresso basics, milk steaming, and machine care in small groups of 4–6, hosted right here at Boliviana.",
+        "es": "Taller para principiantes (nivel 0–1) — fundamentos del espresso, espumado de leche y cuidado de la máquina en grupos pequeños de 4 a 6 personas, aquí mismo en Boliviana."
+      },
+      "registrationRequired": true,
+      "registrationUrl": "https://www.caraya-coffee.com/baristakurs-level-0-119.html"
+    },
+    {
+      "id": "barista-course-2026-11-15",
+      "date": "2026-11-15",
+      "startTime": "10:00",
+      "endTime": "13:00",
+      "title": {
+        "de": "Barista-Kurs",
+        "en": "Barista Course",
+        "es": "Curso de Barista"
+      },
+      "description": {
+        "de": "Einsteiger-Workshop (Level 0–1) – Espresso-Grundlagen, Milchaufschäumen und Maschinenpflege in kleinen Gruppen von 4–6 Personen, direkt hier bei Boliviana.",
+        "en": "Level 0–1 beginner workshop — espresso basics, milk steaming, and machine care in small groups of 4–6, hosted right here at Boliviana.",
+        "es": "Taller para principiantes (nivel 0–1) — fundamentos del espresso, espumado de leche y cuidado de la máquina en grupos pequeños de 4 a 6 personas, aquí mismo en Boliviana."
+      },
+      "registrationRequired": true,
+      "registrationUrl": "https://www.caraya-coffee.com/baristakurs-level-0-119.html"
     }
   ]
 }
