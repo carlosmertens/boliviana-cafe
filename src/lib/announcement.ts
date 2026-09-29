@@ -27,7 +27,8 @@ const data = announcementData as AnnouncementFile;
 
 /**
  * The one thing the banner should show right now: the soonest upcoming
- * event (from src/data/events.json, shared with the /events page), falling
+ * event with a confirmed time and description (from src/data/events.json,
+ * shared with the /events page), falling
  * back to the general info notice, or null when there's nothing to say
  * (which hides the banner entirely).
  */
@@ -36,9 +37,11 @@ export function getActiveAnnouncement(
 ): CafeEvent | AnnouncementInfo | null {
   if (!data.enabled) return null;
 
-  const upcoming = upcomingEvents(now);
-  if (upcoming.length > 0) return upcoming[0];
-  return data.info;
+  // Events still marked TBC (no time or no description) aren't ready to be announced.
+  const next = upcomingEvents(now).find(
+    (event) => event.startTime && event.description,
+  );
+  return next ?? data.info;
 }
 
 export function isAnnouncementEvent(
