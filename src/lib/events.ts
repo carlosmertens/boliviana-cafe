@@ -5,13 +5,15 @@ export interface CafeEvent {
   id: string;
   /** ISO date (YYYY-MM-DD), Europe/Berlin. */
   date: string;
-  /** HH:mm, Europe/Berlin. */
-  startTime: string;
-  /** HH:mm, Europe/Berlin — the event is treated as past once this time is reached. */
-  endTime: string;
+  /** HH:mm, Europe/Berlin. Omit while the time is still to be confirmed (shown as "TBC"). */
+  startTime?: string;
+  /** HH:mm, Europe/Berlin — the event is treated as past once this time is reached. Without it, the event stays upcoming through the end of its date. */
+  endTime?: string;
   title: Record<Locale, string>;
-  description: Record<Locale, string>;
-  registrationRequired: boolean;
+  /** Omit while the description is still to be confirmed (shown as "TBC"). */
+  description?: Record<Locale, string>;
+  /** Omit while still unknown — the card then shows no registration note at all. */
+  registrationRequired?: boolean;
   /** Only meaningful when registrationRequired is true — omit if there's no sign-up page yet. */
   registrationUrl?: string;
   /** Optional external reference for curious visitors (e.g. photos/background on a dish or tradition) — not a registration link. */
@@ -51,7 +53,7 @@ function berlinNowParts(date: Date) {
 export function hasEnded(event: CafeEvent, now: Date = new Date()): boolean {
   const berlinNow = berlinNowParts(now);
   if (event.date !== berlinNow.date) return event.date < berlinNow.date;
-  return event.endTime <= berlinNow.time;
+  return event.endTime !== undefined && event.endTime <= berlinNow.time;
 }
 
 /** All events that haven't ended yet, soonest first — the single source of truth for both the /events page and the announcement banner. */
@@ -59,6 +61,16 @@ export function upcomingEvents(now: Date = new Date()): CafeEvent[] {
   return data.events
     .filter((event) => !hasEnded(event, now))
     .sort((a, b) =>
-      `${a.date}T${a.startTime}`.localeCompare(`${b.date}T${b.startTime}`),
+      `${a.date}T${a.startTime ?? "00:00"}`.localeCompare(
+        `${b.date}T${b.startTime ?? "00:00"}`,
+      ),
     );
+}
+
+/** "10:00–13:00", "10:00" when only the start is known, or the given TBC label when no time is set. */
+export function formatEventTime(event: CafeEvent, tbcLabel: string): string {
+  if (!event.startTime) return tbcLabel;
+  return event.endTime
+    ? `${event.startTime}–${event.endTime}`
+    : event.startTime;
 }

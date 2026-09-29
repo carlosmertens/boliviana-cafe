@@ -42,6 +42,15 @@
       "registrationRequired": false
     },
     {
+      "id": "coffee-cupping-2026-10-09",
+      "date": "2026-10-09",
+      "title": {
+        "de": "Kaffee Cupping",
+        "en": "Coffee Cupping",
+        "es": "Cata de café (cupping)"
+      }
+    },
+    {
       "id": "barista-course-2026-10-18",
       "date": "2026-10-18",
       "startTime": "10:00",
@@ -58,6 +67,41 @@
       },
       "registrationRequired": true,
       "registrationUrl": "https://www.caraya-coffee.com/baristakurs-level-0-119.html"
+    },
+    {
+      "id": "wine-tasting-2026-10-21",
+      "date": "2026-10-21",
+      "title": {
+        "de": "Wein Tasting",
+        "en": "Wine Tasting",
+        "es": "Cata de vinos"
+      }
+    },
+    {
+      "id": "breathwork-and-coffee-2026-10-25",
+      "date": "2026-10-25",
+      "title": {
+        "de": "Breathwork and Coffee",
+        "en": "Breathwork and Coffee",
+        "es": "Breathwork y café"
+      }
+    },
+    {
+      "id": "fiesta-de-todos-santos-2026-10-31",
+      "date": "2026-10-31",
+      "startTime": "10:00",
+      "endTime": "22:00",
+      "title": {
+        "de": "Fiesta de Todos Santos",
+        "en": "Fiesta de Todos Santos",
+        "es": "Fiesta de Todos Santos"
+      },
+      "description": {
+        "de": "Anfang November wird in Bolivien Todos Santos gefeiert – ein Fest der Erinnerung und der Begegnung, bei dem Familien ihrer Verstorbenen gedenken. Wir feiern schon am 31.10. mit unserer roten Pukacapa (nur an diesem Tag), „Singani Red“, „Foamy Blood Orange“ (Mocktail), paazmusic, DJ aus Bolivien, und bolivianischen Klassikern: Empanadas, Kaffee und Wein.",
+        "en": "In early November, Bolivia celebrates Todos Santos — a festival of remembrance and togetherness, when families honour their departed. We're celebrating already on Oct 31 with our red pukacapa (this day only), \"Singani Red\", \"Foamy Blood Orange\" (mocktail), paazmusic, DJ from Bolivia, and Bolivian classics: empanadas, coffee and wine.",
+        "es": "A comienzos de noviembre, Bolivia celebra Todos Santos — una fiesta de recuerdo y encuentro en la que las familias honran a sus difuntos. Lo celebramos ya el 31.10 con nuestra pukacapa roja (solo ese día), «Singani Red», «Foamy Blood Orange» (mocktail), paazmusic, DJ de Bolivia, y clásicos bolivianos: empanadas, café y vino."
+      },
+      "registrationRequired": false
     },
     {
       "id": "barista-course-2026-11-15",

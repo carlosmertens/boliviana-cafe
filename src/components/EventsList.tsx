@@ -1,6 +1,6 @@
 import { useFormatter, useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
-import { upcomingEvents, type CafeEvent } from "@/lib/events";
+import { formatEventTime, upcomingEvents, type CafeEvent } from "@/lib/events";
 
 function EventRow({ event }: { event: CafeEvent }) {
   const t = useTranslations("events");
@@ -27,13 +27,13 @@ function EventRow({ event }: { event: CafeEvent }) {
             month: "short",
             timeZone: "UTC",
           })}{" "}
-          · {event.startTime}–{event.endTime}
+          · {formatEventTime(event, t("tbc"))}
         </p>
         <h2 className="text-boliviana-navy text-2xl font-semibold">
           {event.title[locale]}
         </h2>
         <p className="text-boliviana-navy/80 mt-1 max-w-xl">
-          {event.description[locale]}
+          {event.description?.[locale] ?? t("tbc")}
         </p>
 
         {event.learnMoreUrl && (
@@ -63,11 +63,11 @@ function EventRow({ event }: { event: CafeEvent }) {
                 {t("registrationRequired")}
               </p>
             )
-          ) : (
+          ) : event.registrationRequired === false ? (
             <p className="text-boliviana-navy/50 text-sm">
               {t("noRegistrationNeeded")}
             </p>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

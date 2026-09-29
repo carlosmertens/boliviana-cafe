@@ -6,6 +6,7 @@ import { useFormatter, useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import type { Locale } from "@/i18n/routing";
 import { getActiveAnnouncement, isAnnouncementEvent } from "@/lib/announcement";
+import { formatEventTime } from "@/lib/events";
 
 const storageKey = "boliviana-announcement-dismissed";
 
@@ -33,6 +34,7 @@ function getServerDismissedId(): typeof unknown {
 
 export function AnnouncementBanner() {
   const t = useTranslations("banner");
+  const tEvents = useTranslations("events");
   const locale = useLocale() as Locale;
   const format = useFormatter();
   const [sessionDismissedId, setSessionDismissedId] = useState<string | null>(
@@ -68,7 +70,7 @@ export function AnnouncementBanner() {
       ? t("promotionLabel")
       : t("infoLabel");
   const dateLine = isEvent
-    ? `${format.dateTime(new Date(`${announcement.date}T00:00:00Z`), { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })} · ${announcement.startTime}–${announcement.endTime}`
+    ? `${format.dateTime(new Date(`${announcement.date}T00:00:00Z`), { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })} · ${formatEventTime(announcement, tEvents("tbc"))}`
     : announcement.dateLabel?.[locale];
   const detail = isEvent
     ? announcement.title[locale]
