@@ -44,11 +44,20 @@
     {
       "id": "coffee-cupping-2026-10-09",
       "date": "2026-10-09",
+      "startTime": "18:00",
+      "endTime": "20:00",
       "title": {
         "de": "Kaffee Cupping",
         "en": "Coffee Cupping",
         "es": "Cata de café (cupping)"
-      }
+      },
+      "description": {
+        "de": "Entdecke Boliviens Kaffeevielfalt! Verkoste 10 bolivianische Spezialitätenkaffees direkt aus unserer Rösterei – mit Einführung in die Cupping-Methode (riechen, schlürfen, vergleichen), Infos zu Herkunft, Anbau und Verarbeitung sowie Austausch mit anderen Kaffeeliebhaber:innen. Für alle Level, keine Vorkenntnisse nötig. 5 € pro Person, maximal 10 Teilnehmende.",
+        "en": "Discover Bolivia's coffee diversity! Taste 10 Bolivian specialty coffees straight from our roastery — with an introduction to the cupping method (smelling, slurping, comparing), background on origin, cultivation and processing, and a chance to swap notes with fellow coffee lovers. All levels welcome, no prior experience needed. €5 per person, limited to 10 participants.",
+        "es": "¡Descubre la diversidad del café boliviano! Prueba 10 cafés de especialidad bolivianos directamente de nuestra tostaduría — con una introducción al método de cupping (oler, sorber, comparar), información sobre origen, cultivo y procesamiento, e intercambio con otros amantes del café. Para todos los niveles, sin experiencia previa. 5 € por persona, máximo 10 participantes."
+      },
+      "registrationRequired": true,
+      "registrationUrl": "https://www.eventbrite.de/e/bolivianisches-kaffee-cupping-bei-boliviana-tickets-2002506468754"
     },
     {
       "id": "barista-course-2026-10-18",
@@ -71,11 +80,20 @@
     {
       "id": "wine-tasting-2026-10-21",
       "date": "2026-10-21",
+      "startTime": "18:00",
+      "endTime": "20:00",
       "title": {
         "de": "Wein Tasting",
         "en": "Wine Tasting",
         "es": "Cata de vinos"
-      }
+      },
+      "description": {
+        "de": "Bolivianischer Weinabend: Rotwein aus den Höhen des Andenlands. Verkoste drei bolivianische Rotweine aus den Tälern von Tarija, wo Reben auf über 1.600 Metern wachsen – und erfahre, wie Höhe, intensive Sonne und kühle Nächte den besonderen Charakter dieser Weine prägen, von der spanischen Kolonialzeit bis zu heutigen Winzer:innen. Dazu ein kleiner bolivianischer Snack, Zeit für Fragen und Austausch. Ab 18 Jahren, 34,50 € pro Person, maximal 10 Teilnehmende.",
+        "en": "Bolivian wine evening: red wine from the heights of the Andes. Taste three Bolivian red wines from the valleys of Tarija, where vines grow at over 1,600 metres — and learn how altitude, intense sunlight and cool nights shape their distinctive character, from Spanish colonial times to today's winemakers. Includes a small Bolivian snack, plus time for questions and conversation. 18+, €34.50 per person, limited to 10 participants.",
+        "es": "Velada de vinos bolivianos: tintos de las alturas andinas. Prueba tres vinos tintos bolivianos de los valles de Tarija, donde las viñas crecen a más de 1.600 metros — y descubre cómo la altitud, el sol intenso y las noches frescas dan forma a su carácter único, desde la época colonial española hasta los viticultores de hoy. Incluye un pequeño snack boliviano, además de tiempo para preguntas y conversación. Mayores de 18 años, 34,50 € por persona, máximo 10 participantes."
+      },
+      "registrationRequired": true,
+      "registrationUrl": "https://www.eventbrite.de/e/bolivianischer-weinabend-rotwein-aus-den-hohen-des-andenlands-tickets-2002510174839"
     },
     {
       "id": "breathwork-and-coffee-2026-10-25",
